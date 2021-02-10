@@ -1,0 +1,25 @@
+Medication
+==========
+
+========================== 
+IPsaraasOrdination
+========================== 
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasOrdination
+
+==========================
+Derived attributes
+==========================
+
+Attributes that are derived for the research DB.
+
+  **interval_days**
+    Integer with length of interval in days. Derived from frequence.
+
+  **online_data_entry**
+    True if the medication object has been created by a doctor or HCP. False if
+    it has been migrated from existing DB or created by SCQM staff.
+
+========================== 
+IPsaraasAdjustment
+========================== 
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasAdjustment

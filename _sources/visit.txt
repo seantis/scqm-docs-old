@@ -1,0 +1,557 @@
+Visit
+=====
+
+
+==========================
+IPsaraasVisit
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |        D        |        D        |
++-----------------+-----------------+-----------------+
+| AS              |        D        |        D        |
++-----------------+-----------------+-----------------+
+| PsA             |        D        |        D        |
++-----------------+-----------------+-----------------+
+| Undiff          |        D        |        D        |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisit
+
+==========================
+IPsaraasVisitMedication
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |        D        |
++-----------------+-----------------+-----------------+
+| AS              |                 |        D        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |        D        |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |        D        |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitMedication
+
+==========================
+IPsaraasVisitOsteoporosis
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |        D        |
++-----------------+-----------------+-----------------+
+| AS              |                 |        D        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |        D        |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitOsteoporosis
+
+==========================
+IPsaraasVisitOperations
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |        D        |
++-----------------+-----------------+-----------------+
+| AS              |                 |        D        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |        D        |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitOperations
+
+==========================
+IPsaraasVisitLogistics
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |        D        |
++-----------------+-----------------+-----------------+
+| AS              |                 |        D        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |        D        |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitLogistics
+
+==========================
+IPsaraasVisitComorbidities
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |        D        |
++-----------------+-----------------+-----------------+
+| AS              |                 |        D        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |        D        |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |        D        |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitComorbidities
+
+===========================
+IPsaraasVisitManifestations
+===========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |                 |
++-----------------+-----------------+-----------------+
+| AS              |                 |        D        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |        D        |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitManifestations
+
+==========================
+IPsaraasVisitHAQ
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |        P        |        P        |
++-----------------+-----------------+-----------------+
+| AS              |                 |                 |
++-----------------+-----------------+-----------------+
+| PsA             |        P        |        P        |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitHAQ
+
+==========================
+IPsaraasVisitRADAI5
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |        P        |        P        |
++-----------------+-----------------+-----------------+
+| AS              |                 |                 |
++-----------------+-----------------+-----------------+
+| PsA             |                 |                 |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitRADAI5
+
+==========================
+IPsaraasVisitRADAI
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |        P        |        P        |
++-----------------+-----------------+-----------------+
+| AS              |                 |                 |
++-----------------+-----------------+-----------------+
+| PsA             |                 |                 |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitRADAI
+
+==========================
+IPsaraasVisitSF12
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |        P        |
++-----------------+-----------------+-----------------+
+| AS              |                 |        P        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |        P        |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |        P        |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitSF12
+
+==========================
+IPsaraasVisitEuroqol
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |        P        |        P        |
++-----------------+-----------------+-----------------+
+| AS              |        P        |        P        |
++-----------------+-----------------+-----------------+
+| PsA             |        P        |        P        |
++-----------------+-----------------+-----------------+
+| Undiff          |        P        |        P        |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitEuroqol
+
+==========================
+IPsaraasVisitSocioeco
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |        P        |
++-----------------+-----------------+-----------------+
+| AS              |                 |        P        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |        P        |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |        P        |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitSocioeco
+
+==========================
+IPsaraasVisitBASMI
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |                 |
++-----------------+-----------------+-----------------+
+| AS              |                 |        D        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |                 |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitBASMI
+
+=============================
+IPsaraasVisitAdditionalDoctor
+=============================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |                 |
++-----------------+-----------------+-----------------+
+| AS              |                 |        D        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |                 |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitAdditionalDoctor
+
+==========================
+IPsaraasVisitBASDAI
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |                 |
++-----------------+-----------------+-----------------+
+| AS              |       P         |        P        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |                 |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+How have you been in the **last 7 days**?
+-----------------------------------------
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitBASDAI
+
+==========================
+IPsaraasVisitBASFI
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |                 |
++-----------------+-----------------+-----------------+
+| AS              |        P        |        P        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |                 |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitBASFI
+
+=============================
+IPsaraasVisitIllnessMastering
+=============================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |                 |
++-----------------+-----------------+-----------------+
+| AS              |                 |        D        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |                 |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitIllnessMastering
+
+==========================
+IPsaraasTNFRelated
+==========================
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasTNFRelated
+
+==============================
+IPsaraasVisitAdditionalPatient
+==============================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |        P        |
++-----------------+-----------------+-----------------+
+| AS              |                 |        P        |
++-----------------+-----------------+-----------------+
+| PsA             |                 |        P        |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |        P        |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitAdditionalPatient
+
+==========================
+IPsaraasVisitPSADA
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |                 |
++-----------------+-----------------+-----------------+
+| AS              |                 |                 |
++-----------------+-----------------+-----------------+
+| PsA             |       P         |        P        |
++-----------------+-----------------+-----------------+
+| Undiff          |       P         |       P         |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitPSADA
+
+==========================
+IPsaraasVisitDLQI
+==========================
+
++-----------------+-----------------+-----------------+
+|                 |     Standard    |  Yearly Control |
++-----------------+-----------------+-----------------+
+| RA              |                 |                 |
++-----------------+-----------------+-----------------+
+| AS              |                 |                 |
++-----------------+-----------------+-----------------+
+| PsA             |       P         |        P        |
++-----------------+-----------------+-----------------+
+| Undiff          |                 |                 |
++-----------------+-----------------+-----------------+
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitDLQI
+
+==========================
+IPsaraasVisitReproductive
+==========================
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitReproductive1
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitReproductive2
+
+==========================
+IPsaraasVisitMeteoropathy
+==========================
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitMeteoropathy
+
+===============================
+IPsaraasVisitDiseaseMonitoring
+===============================
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitDiseaseMonitoring
+
+============================
+IPsaraasVisitTechnologyApps
+============================
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitTechnologyApps
+
+==========================
+IPsaraasVisitNoAppUsage
+==========================
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitNoAppUsage
+
+==========================
+IPsaraasVisitAppUsage
+==========================
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitAppUsage
+
+==========================
+IPsaraasVisitASAS
+==========================
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitASAS
+
+==========================
+IPsaraasVisitDeprecated
+==========================
+
+These questions are no longer part of the questionnaire.
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitDeprecated
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitSF36
+
+==========================
+IPsaraasVisitMNYC
+==========================
+
+These questions are no longer part of the questionnaire.
+
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasVisitMNYC
+
+==========================
+Derived attributes
+==========================
+
+Attributes that are derived for the research DB.
+
+  **das28bsr_score**
+    Disease Activity Score 28 (DAS28) BSR
+
+  **das283crp_score**
+    Disease Activity Score 28 (DAS28) CRP
+
+  **basmi_score**
+    Bath Ankylosing Spondylitis Metrology Index (BASMI)
+
+  **basfi_score**
+    Bath Ankylosing Spondylitis Functional Index (BASFI)
+
+  **basdai_score**
+    Bath Ankylosing Spondylitis Disease Activity Index (BASDAI)
+
+  **asdas_score**
+    Ankylosing Spondylitis Disease Activity Score (ASDAS)
+
+  **radai_score**
+    Rheumatoid Arthritis Disease Activity Index (RADAI)
+
+  **dlqi_score**
+    Dermatology Life Quality Index (DLQI)
+
+  **haq_score**
+    Health assessment Questionnaire (HAQ)
+
+  **euroqol_score**
+    EuroQol score
+
+  **sf12_pcsus_score**
+  	SF-12 Physical component summary (PCS)
+
+  **sf12_mcsus_score**
+    SF-12 Mental component summary (MCS)
+
+  **sf36_pcsus_score**
+    SF-36 Physical component summary (PCS)
+
+    *Replaced by SF-12 with release 3.5.3 (march 2012)*
+
+  **sf36_mcsus_score**
+    SF-36 Mental component summary (MCS)
+
+    *Replaced by SF-12 with release 3.5.3 (march 2012)*
+
+  **asas_hi**
+    ASAS Health Index
+
+  **online_data_entry**
+    True if the visit object has been created by a doctor or HCP. False if it
+    has been migrated from existing DB or created by SCQM staff.
+
+==========================
+Joint Puppet Localizations
+==========================
+
+28 joints (joints_type=28):
+
+.. image:: /images/joints28.png
+
+44 joints (joints_type=44):
+
+.. image:: /images/joints44.png
+
+68 joints (joints_type=68):
+
+.. image:: /images/joints68.png
+
+Enthesides:
+
+.. image:: /images/enthesides.png
+
+==========================
+Origins of scores
+==========================
+
+
+
+==========================
+Dependencies of Socioeco
+==========================
+
+.. image:: /images/socioeco1.png
+
+.. image:: /images/socioeco2.png
+
+=============================
+Dependencies of Reproductive
+=============================
+
+.. image:: /images/reproductive1.png
+
+.. image:: /images/reproductive2.png
+
+.. image:: /images/reproductive3.png
+
+.. image:: /images/reproductive4.png

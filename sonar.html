@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>SONAR &mdash; PsARAAS v4.30 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '4.30',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="PsARAAS v4.30 documentation" href="index.html" />
+    <link rel="up" title="PsARAAS Content Type Interfaces" href="interfaces.html" />
+    <link rel="next" title="Health Issue" href="healthissue.html" />
+    <link rel="prev" title="Aliquot" href="aliquot.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="healthissue.html" title="Health Issue"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="aliquot.html" title="Aliquot"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" accesskey="U">PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sonar">
+<h1>SONAR<a class="headerlink" href="#sonar" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="ipsaraassonar1">
+<h2>IPsaraasSONAR1<a class="headerlink" href="#ipsaraassonar1" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.sonar.interfaces.IPsaraasSONAR1">
+<em class="property">interface </em><tt class="descclassname">psaraas.sonar.interfaces.</tt><tt class="descname">IPsaraasSONAR1</tt><a class="headerlink" href="#psaraas.sonar.interfaces.IPsaraasSONAR1" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>SONAR Questions</p>
+<dl class="attribute">
+<dt id="IPsaraasSONAR1.transducer_frequency">
+<tt class="descname">transducer_frequency</tt><a class="headerlink" href="#IPsaraasSONAR1.transducer_frequency" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Schallkopffrequenz (MHz)</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>FIVE_TO_SEVEN_POINT_FOUR [5-7.4]</li>
+<li>SEVEN_POINT_FIVE_TO_NINE_PONT_NINE [7.5-9.9]</li>
+<li>TEN_TO_TWELVE_POINT_FOUR [10-12.4]</li>
+<li>TWELVE_POINT_FIVE_TO_EIGHTEEN [12.5-18]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONAR1.tenosynovitis">
+<tt class="descname">tenosynovitis</tt><a class="headerlink" href="#IPsaraasSONAR1.tenosynovitis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Tenosynovitis</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>ZERO [0]</li>
+<li>ONE [1]</li>
+<li>TWO [2]</li>
+<li>THREE [3]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONAR1.b_mode">
+<tt class="descname">b_mode</tt><a class="headerlink" href="#IPsaraasSONAR1.b_mode" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>B-Mode (volar/palmar)</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONAR1.pd_dorsal">
+<tt class="descname">pd_dorsal</tt><a class="headerlink" href="#IPsaraasSONAR1.pd_dorsal" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>PD dorsal</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONAR1.erosion">
+<tt class="descname">erosion</tt><a class="headerlink" href="#IPsaraasSONAR1.erosion" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Erosion</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONAR1.cartilage">
+<tt class="descname">cartilage</tt><a class="headerlink" href="#IPsaraasSONAR1.cartilage" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Knorpel (Dicke in mm)</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraassonar2">
+<h2>IPsaraasSONAR2<a class="headerlink" href="#ipsaraassonar2" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.sonar.interfaces.IPsaraasSONAR2">
+<em class="property">interface </em><tt class="descclassname">psaraas.sonar.interfaces.</tt><tt class="descname">IPsaraasSONAR2</tt><a class="headerlink" href="#psaraas.sonar.interfaces.IPsaraasSONAR2" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>SONAR Questions</p>
+<dl class="attribute">
+<dt id="IPsaraasSONAR2.first_examination">
+<tt class="descname">first_examination</tt><a class="headerlink" href="#IPsaraasSONAR2.first_examination" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Haben Sie zuerst die klinische oder die sonographische Untersuchung vorgenommen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>CLINICAL [Klinisch]</li>
+<li>SONOGRAFIC [Sonografisch]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONAR2.results_influence_therapy">
+<tt class="descname">results_influence_therapy</tt><a class="headerlink" href="#IPsaraasSONAR2.results_influence_therapy" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Beeinflussen die Resultate der Gelenkssonographie Ihre Therapieentscheidung direkt?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONAR2.influence_yes">
+<tt class="descname">influence_yes</tt><a class="headerlink" href="#IPsaraasSONAR2.influence_yes" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie hat sich die Behandlung geändert?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>MORE_AGGRESSIVE [ich behandle aggressiver.]</li>
+<li>SAME [ich behandle gleich.]</li>
+<li>LESS [ich behandle weniger als ich ohne Kenntnisse der Sonographie-Resultate behandeln würde.]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONAR2.influence_no">
+<tt class="descname">influence_no</tt><a class="headerlink" href="#IPsaraasSONAR2.influence_no" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Aus welchen Gründen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>NO_ADDITIONAL_INFORMATION [ich erhielt keine zusätzliche Information die mir bei der Theraphieentscheidung hilft.]</li>
+<li>NO_TRUST [ich vertraue den Resultaten der Sonographie nicht.]</li>
+<li>PATIENT_NOT_WILLING [der Patient ist nicht bereit sich entsprechend behandeln zu lassen.]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONAR2.influence_other">
+<tt class="descname">influence_other</tt><a class="headerlink" href="#IPsaraasSONAR2.influence_other" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>andere Gründe:</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONAR2.influence_patient_willingness">
+<tt class="descname">influence_patient_willingness</tt><a class="headerlink" href="#IPsaraasSONAR2.influence_patient_willingness" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Beeinflusst die Sonographie beziehungsweise das Resultat der Sonographie die Bereitschaft des Patienten sich anders behandeln zu lassen als bisher?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraassonarhip">
+<h2>IPsaraasSONARHip<a class="headerlink" href="#ipsaraassonarhip" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.sonar.interfaces.IPsaraasSONARHip">
+<em class="property">interface </em><tt class="descclassname">psaraas.sonar.interfaces.</tt><tt class="descname">IPsaraasSONARHip</tt><a class="headerlink" href="#psaraas.sonar.interfaces.IPsaraasSONARHip" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasSONARHip.hip_prosthesis_right">
+<tt class="descname">hip_prosthesis_right</tt><a class="headerlink" href="#IPsaraasSONARHip.hip_prosthesis_right" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Prothese rechts</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONARHip.b_mode_right">
+<tt class="descname">b_mode_right</tt><a class="headerlink" href="#IPsaraasSONARHip.b_mode_right" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>B-mode rechts</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONARHip.osteophytes_right">
+<tt class="descname">osteophytes_right</tt><a class="headerlink" href="#IPsaraasSONARHip.osteophytes_right" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Osteophyten rechts</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONARHip.articular_capsule_bone_distance_right">
+<tt class="descname">articular_capsule_bone_distance_right</tt><a class="headerlink" href="#IPsaraasSONARHip.articular_capsule_bone_distance_right" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Gelenkkapsel/Knochenabstand rechts (mm)</p>
+<p>Max-Value: 30.0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONARHip.hip_prosthesis_left">
+<tt class="descname">hip_prosthesis_left</tt><a class="headerlink" href="#IPsaraasSONARHip.hip_prosthesis_left" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Prothese links</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONARHip.b_mode_left">
+<tt class="descname">b_mode_left</tt><a class="headerlink" href="#IPsaraasSONARHip.b_mode_left" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>B-mode links</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONARHip.osteophytes_left">
+<tt class="descname">osteophytes_left</tt><a class="headerlink" href="#IPsaraasSONARHip.osteophytes_left" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Osteophyten links</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasSONARHip.articular_capsule_bone_distance_left">
+<tt class="descname">articular_capsule_bone_distance_left</tt><a class="headerlink" href="#IPsaraasSONARHip.articular_capsule_bone_distance_left" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Gelenkkapsel/Knochenabstand links (mm)</p>
+<p>Max-Value: 30.0</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="derived-attributes">
+<h2>Derived attributes<a class="headerlink" href="#derived-attributes" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Attributes that are derived for the research DB.</p>
+<blockquote>
+<dl class="docutils">
+<dt><strong>cartilage_number</strong></dt>
+<dd>Number of marked cartilage joints</dd>
+<dt><strong>cartilage_score</strong></dt>
+<dd>Cartilage scoring: Sum of cartilage values for marked joints.</dd>
+<dt><strong>erosion_number</strong></dt>
+<dd>Number of marked erosion joints</dd>
+<dt><strong>erosion_score</strong></dt>
+<dd>Erosion scoring: Sum of erosion values for marked joints.</dd>
+<dt><strong>pd_dorsal_number</strong></dt>
+<dd>Number of marked PD dorsal joints</dd>
+<dt><strong>pd_dorsal_score</strong></dt>
+<dd>PD dorsal scoring: Sum of PD dorsal values for marked joints.</dd>
+<dt><strong>b_mode_number</strong></dt>
+<dd>Number of marked B-mode joints</dd>
+<dt><strong>b_mode_score</strong></dt>
+<dd>B-mode scoring: Sum of B-mode values for marked joints.</dd>
+</dl>
+</blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Inhalt</a></h3>
+            <ul>
+<li><a class="reference external" href="#">SONAR</a><ul>
+<li><a class="reference external" href="#ipsaraassonar1">IPsaraasSONAR1</a></li>
+<li><a class="reference external" href="#ipsaraassonar2">IPsaraasSONAR2</a></li>
+<li><a class="reference external" href="#ipsaraassonarhip">IPsaraasSONARHip</a></li>
+<li><a class="reference external" href="#derived-attributes">Derived attributes</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Vorheriges Thema</h4>
+            <p class="topless"><a href="aliquot.html"
+                                  title="vorheriges Kapitel">Aliquot</a></p>
+            <h4>Nächstes Thema</h4>
+            <p class="topless"><a href="healthissue.html"
+                                  title="nächstes Kapitel">Health Issue</a></p>
+            <h3>Diese Seite</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/sonar.txt"
+                     rel="nofollow">Quelltext anzeigen</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Schnellsuche</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Los" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="healthissue.html" title="Health Issue"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="aliquot.html" title="Aliquot"
+             >zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" >PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2017, seantis gmbh.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.7 erstellt.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+SONAR
+=======
+
+==========================
+IPsaraasSONAR1
+==========================
+.. autointerface:: psaraas.sonar.interfaces.IPsaraasSONAR1
+
+==========================
+IPsaraasSONAR2
+==========================
+.. autointerface:: psaraas.sonar.interfaces.IPsaraasSONAR2
+
+==========================
+IPsaraasSONARHip
+==========================
+.. autointerface:: psaraas.sonar.interfaces.IPsaraasSONARHip
+
+==========================
+Derived attributes
+==========================
+
+Attributes that are derived for the research DB.
+
+  **cartilage_number**
+    Number of marked cartilage joints
+
+  **cartilage_score**
+    Cartilage scoring: Sum of cartilage values for marked joints.
+
+  **erosion_number**
+    Number of marked erosion joints
+
+  **erosion_score**
+    Erosion scoring: Sum of erosion values for marked joints.
+
+  **pd_dorsal_number**
+    Number of marked PD dorsal joints
+
+  **pd_dorsal_score**
+    PD dorsal scoring: Sum of PD dorsal values for marked joints.
+
+  **b_mode_number**
+    Number of marked B-mode joints
+
+  **b_mode_score**
+    B-mode scoring: Sum of B-mode values for marked joints.

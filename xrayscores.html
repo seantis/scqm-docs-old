@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>X-ray Scores &mdash; PsARAAS v4.30 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '4.30',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="PsARAAS v4.30 documentation" href="index.html" />
+    <link rel="up" title="PsARAAS Content Type Interfaces" href="interfaces.html" />
+    <link rel="next" title="Biokit" href="biokit.html" />
+    <link rel="prev" title="X-ray" href="xray.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="biokit.html" title="Biokit"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="xray.html" title="X-ray"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" accesskey="U">PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="x-ray-scores">
+<h1>X-ray Scores<a class="headerlink" href="#x-ray-scores" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="ipsaraasxrayscore">
+<h2>IPsaraasXrayScore<a class="headerlink" href="#ipsaraasxrayscore" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.xray.interfaces.IPsaraasXrayScore">
+<em class="property">interface </em><tt class="descclassname">psaraas.xray.interfaces.</tt><tt class="descname">IPsaraasXrayScore</tt><a class="headerlink" href="#psaraas.xray.interfaces.IPsaraasXrayScore" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Interface for general x-ray scorings.</p>
+<dl class="attribute">
+<dt id="IPsaraasXrayScore.date">
+<tt class="descname">date</tt><a class="headerlink" href="#IPsaraasXrayScore.date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Score Datum</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasXrayScore.xray_date">
+<tt class="descname">xray_date</tt><a class="headerlink" href="#IPsaraasXrayScore.xray_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Röntgendatum</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasXrayScore.dicom_available">
+<tt class="descname">dicom_available</tt><a class="headerlink" href="#IPsaraasXrayScore.dicom_available" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>DICOM Bild vorhanden</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasmnycxrayscore">
+<h2>IPsaraasMNYCXrayScore<a class="headerlink" href="#ipsaraasmnycxrayscore" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.xray.interfaces.IPsaraasMNYCXrayScore">
+<em class="property">interface </em><tt class="descclassname">psaraas.xray.interfaces.</tt><tt class="descname">IPsaraasMNYCXrayScore</tt><a class="headerlink" href="#psaraas.xray.interfaces.IPsaraasMNYCXrayScore" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Interface for manual AS xray scorings for mNYC.</p>
+<dl class="docutils">
+<dt><strong>mny_rx_score</strong></dt>
+<dd>mNYC x-ray score</dd>
+<dt><strong>scorer</strong></dt>
+<dd>ID of scoring doctor</dd>
+</dl>
+<dl class="attribute">
+<dt id="IPsaraasMNYCXrayScore.sacroiliac_joint_left">
+<tt class="descname">sacroiliac_joint_left</tt><a class="headerlink" href="#IPsaraasMNYCXrayScore.sacroiliac_joint_left" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Iliosakralgelenk links</p>
+<p>Max-Value: 4</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasMNYCXrayScore.sacroiliac_joint_right">
+<tt class="descname">sacroiliac_joint_right</tt><a class="headerlink" href="#IPsaraasMNYCXrayScore.sacroiliac_joint_right" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Iliosakralgelenk rechts</p>
+<p>Max-Value: 4</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasMNYCXrayScore.study_not_suited_scoring">
+<tt class="descname">study_not_suited_scoring</tt><a class="headerlink" href="#IPsaraasMNYCXrayScore.study_not_suited_scoring" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Bilder für scoring ungeeignet</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasMNYCXrayScore.lumbar_spine_scored">
+<tt class="descname">lumbar_spine_scored</tt><a class="headerlink" href="#IPsaraasMNYCXrayScore.lumbar_spine_scored" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Scoring der Lendenwirbelsäule</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasMNYCXrayScore.consensus">
+<tt class="descname">consensus</tt><a class="headerlink" href="#IPsaraasMNYCXrayScore.consensus" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Konsens</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasMNYCXrayScore.comment">
+<tt class="descname">comment</tt><a class="headerlink" href="#IPsaraasMNYCXrayScore.comment" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Kommentar</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasMNYCXrayScore.scorer_acronym">
+<tt class="descname">scorer_acronym</tt><a class="headerlink" href="#IPsaraasMNYCXrayScore.scorer_acronym" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrauxrayscore">
+<h2>IPsaraasRauXrayScore<a class="headerlink" href="#ipsaraasrauxrayscore" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.xray.interfaces.IPsaraasRauXrayScore">
+<em class="property">interface </em><tt class="descclassname">psaraas.xray.interfaces.</tt><tt class="descname">IPsaraasRauXrayScore</tt><a class="headerlink" href="#psaraas.xray.interfaces.IPsaraasRauXrayScore" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Interface for rauscore of RA patients.</p>
+<dl class="docutils">
+<dt><strong>rau_score</strong></dt>
+<dd>RAU score. Score is between 0 and 190 for 32 joints.</dd>
+</dl>
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.study_marker">
+<tt class="descname">study_marker</tt><a class="headerlink" href="#IPsaraasRauXrayScore.study_marker" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Studienmarker</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>FINCKH_RIT_RX_2010 [Finckh Rit RX 2010]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_left_1">
+<tt class="descname">hand_left_1</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_left_1" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandLeft1</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_left_2">
+<tt class="descname">hand_left_2</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_left_2" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandLeft2</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_left_3">
+<tt class="descname">hand_left_3</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_left_3" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandLeft3</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_left_4">
+<tt class="descname">hand_left_4</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_left_4" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandLeft4</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_left_5">
+<tt class="descname">hand_left_5</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_left_5" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandLeft5</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_left_6">
+<tt class="descname">hand_left_6</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_left_6" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandLeft6</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_left_7">
+<tt class="descname">hand_left_7</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_left_7" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandLeft7</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_left_8">
+<tt class="descname">hand_left_8</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_left_8" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandLeft8</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_left_9">
+<tt class="descname">hand_left_9</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_left_9" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandLeft9</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_left_10">
+<tt class="descname">hand_left_10</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_left_10" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandLeft10</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_left_11">
+<tt class="descname">hand_left_11</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_left_11" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandLeft11</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_right_1">
+<tt class="descname">hand_right_1</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_right_1" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandRight1</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_right_2">
+<tt class="descname">hand_right_2</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_right_2" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandRight2</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_right_3">
+<tt class="descname">hand_right_3</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_right_3" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandRight3</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_right_4">
+<tt class="descname">hand_right_4</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_right_4" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandRight4</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_right_5">
+<tt class="descname">hand_right_5</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_right_5" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandRight5</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_right_6">
+<tt class="descname">hand_right_6</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_right_6" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandRight6</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_right_7">
+<tt class="descname">hand_right_7</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_right_7" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandRight7</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_right_8">
+<tt class="descname">hand_right_8</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_right_8" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandRight8</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_right_9">
+<tt class="descname">hand_right_9</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_right_9" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandRight9</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_right_10">
+<tt class="descname">hand_right_10</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_right_10" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandRight10</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.hand_right_11">
+<tt class="descname">hand_right_11</tt><a class="headerlink" href="#IPsaraasRauXrayScore.hand_right_11" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayHandRight11</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.foot_left_1">
+<tt class="descname">foot_left_1</tt><a class="headerlink" href="#IPsaraasRauXrayScore.foot_left_1" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayFootLeft1</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.foot_left_2">
+<tt class="descname">foot_left_2</tt><a class="headerlink" href="#IPsaraasRauXrayScore.foot_left_2" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayFootLeft2</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.foot_left_3">
+<tt class="descname">foot_left_3</tt><a class="headerlink" href="#IPsaraasRauXrayScore.foot_left_3" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayFootLeft3</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.foot_left_4">
+<tt class="descname">foot_left_4</tt><a class="headerlink" href="#IPsaraasRauXrayScore.foot_left_4" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayFootLeft4</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.foot_left_5">
+<tt class="descname">foot_left_5</tt><a class="headerlink" href="#IPsaraasRauXrayScore.foot_left_5" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayFootLeft5</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.foot_right_1">
+<tt class="descname">foot_right_1</tt><a class="headerlink" href="#IPsaraasRauXrayScore.foot_right_1" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayFootRight1</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.foot_right_2">
+<tt class="descname">foot_right_2</tt><a class="headerlink" href="#IPsaraasRauXrayScore.foot_right_2" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayFootRight2</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.foot_right_3">
+<tt class="descname">foot_right_3</tt><a class="headerlink" href="#IPsaraasRauXrayScore.foot_right_3" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayFootRight3</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.foot_right_4">
+<tt class="descname">foot_right_4</tt><a class="headerlink" href="#IPsaraasRauXrayScore.foot_right_4" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayFootRight4</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRauXrayScore.foot_right_5">
+<tt class="descname">foot_right_5</tt><a class="headerlink" href="#IPsaraasRauXrayScore.foot_right_5" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>xray_label_xrayFootRight5</p>
+<p>Max-Value: 100</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="joint-puppet-localizations-rau-scores">
+<h2>Joint Puppet Localizations (Rau Scores)<a class="headerlink" href="#joint-puppet-localizations-rau-scores" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Hands:</p>
+<img alt="_images/rau_hands.jpg" src="_images/rau_hands.jpg" />
+<p>Feet:</p>
+<img alt="_images/rau_feet.jpg" src="_images/rau_feet.jpg" />
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Inhalt</a></h3>
+            <ul>
+<li><a class="reference external" href="#">X-ray Scores</a><ul>
+<li><a class="reference external" href="#ipsaraasxrayscore">IPsaraasXrayScore</a></li>
+<li><a class="reference external" href="#ipsaraasmnycxrayscore">IPsaraasMNYCXrayScore</a></li>
+<li><a class="reference external" href="#ipsaraasrauxrayscore">IPsaraasRauXrayScore</a></li>
+<li><a class="reference external" href="#joint-puppet-localizations-rau-scores">Joint Puppet Localizations (Rau Scores)</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Vorheriges Thema</h4>
+            <p class="topless"><a href="xray.html"
+                                  title="vorheriges Kapitel">X-ray</a></p>
+            <h4>Nächstes Thema</h4>
+            <p class="topless"><a href="biokit.html"
+                                  title="nächstes Kapitel">Biokit</a></p>
+            <h3>Diese Seite</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/xrayscores.txt"
+                     rel="nofollow">Quelltext anzeigen</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Schnellsuche</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Los" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="biokit.html" title="Biokit"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="xray.html" title="X-ray"
+             >zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" >PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2017, seantis gmbh.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.7 erstellt.
+    </div>
+  </body>
+</html>

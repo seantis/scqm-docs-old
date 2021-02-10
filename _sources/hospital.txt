@@ -1,0 +1,7 @@
+Hospital
+======== 
+
+========================== 
+IPsaraasHospital
+==========================   
+.. autointerface:: Products.PsaraasHospital.interfaces.IPsaraasHospital

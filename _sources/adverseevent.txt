@@ -1,0 +1,7 @@
+Adverse Event
+=============
+
+========================== 
+IPsaraasAdverseEvent
+==========================   
+.. autointerface:: psaraas.adverseevent.interfaces.IPsaraasAdverseEvent

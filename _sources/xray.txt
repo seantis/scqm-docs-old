@@ -1,0 +1,29 @@
+X-ray
+=====
+
+X-ray image (study in DICOM terms)
+
+  **date**
+    Date of the x-ray
+
+  **accession_no**
+    Field is (mis-)used to store body part.
+
+    Values:
+      * a: Becken ap (von vorne)
+      * b: Becken und LWS von vorne
+      * c: Becken Barsony andere Perspektive
+      * e: LWS ap
+      * f: LWS lateral
+      * ef: LWS ap und lateral auf einem Röntgenbild
+      * h: HWS lateral
+
+  **scoring_dates**
+    Sequence of dates when scores have been created for this x-ray
+
+  **scoring_types**
+    Sequence of types of scores for this image.
+
+    Values:
+      * rau: RAU score
+      * mnyc: mNYC score

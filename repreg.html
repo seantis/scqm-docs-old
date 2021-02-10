@@ -1,0 +1,1558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>RePreg &mdash; PsARAAS v4.30 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '4.30',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="PsARAAS v4.30 documentation" href="index.html" />
+    <link rel="up" title="PsARAAS Content Type Interfaces" href="interfaces.html" />
+    <link rel="next" title="PatientApps" href="patientapps.html" />
+    <link rel="prev" title="Cardiovascular Chevallier" href="cvc.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="patientapps.html" title="PatientApps"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="cvc.html" title="Cardiovascular Chevallier"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" accesskey="U">PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="repreg">
+<h1>RePreg<a class="headerlink" href="#repreg" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="ipsaraasrepreg">
+<h2>IPsaraasRePreg<a class="headerlink" href="#ipsaraasrepreg" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePreg">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePreg</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePreg" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePreg.date">
+<tt class="descname">date</tt><a class="headerlink" href="#IPsaraasRePreg.date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePreg.questionnaire_type">
+<tt class="descname">questionnaire_type</tt><a class="headerlink" href="#IPsaraasRePreg.questionnaire_type" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>HISTORY [History]</li>
+<li>FIRST_TRIMESTER [1. Trimester]</li>
+<li>SECOND_TRIMESTER [2. Trimester]</li>
+<li>THIRD_TRIMESTER [3. Trimester]</li>
+<li>ONE_MONTH_POST_PARTUM [1 Monat post partum]</li>
+<li>TWO_MONTHS_POST_PARTUM [2 Monat post partum]</li>
+<li>SIX_MONTHS_POST_PARTUM [6 Monat post partum]</li>
+<li>TWELVE_MONTHS_POST_PARTUM [12 Monat post partum]</li>
+<li>TWO_YEARS_POST_PARTUM [2 Jahre post partum]</li>
+<li>FOUR_YEARS_POST_PARTUM [4 Jahre post partum]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePreg.pregnancy_index">
+<tt class="descname">pregnancy_index</tt><a class="headerlink" href="#IPsaraasRePreg.pregnancy_index" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePreg.basdai_score">
+<tt class="descname">basdai_score</tt><a class="headerlink" href="#IPsaraasRePreg.basdai_score" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePreg.radai_5_score">
+<tt class="descname">radai_5_score</tt><a class="headerlink" href="#IPsaraasRePreg.radai_5_score" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePreg.dougados_score">
+<tt class="descname">dougados_score</tt><a class="headerlink" href="#IPsaraasRePreg.dougados_score" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepreghistory">
+<h2>IPsaraasRePregHistory<a class="headerlink" href="#ipsaraasrepreghistory" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregHistory">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregHistory</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregHistory" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregHistory.last_menstrual_period">
+<tt class="descname">last_menstrual_period</tt><a class="headerlink" href="#IPsaraasRePregHistory.last_menstrual_period" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Wann war der erste Tag Ihrer letzten Menstruation (LP)?</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregHistory.calculated_due_date">
+<tt class="descname">calculated_due_date</tt><a class="headerlink" href="#IPsaraasRePregHistory.calculated_due_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Wann ist der errechnete Geburtstermin (ET)?</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregHistory.planned_pregnancy">
+<tt class="descname">planned_pregnancy</tt><a class="headerlink" href="#IPsaraasRePregHistory.planned_pregnancy" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>War die Schwangerschaft geplant?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregHistory.months_to_pregnancy">
+<tt class="descname">months_to_pregnancy</tt><a class="headerlink" href="#IPsaraasRePregHistory.months_to_pregnancy" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Wieviele Monate dauerte es vom Zeitpunkt des Kinderwunsches bis zur Schwangerschaft?</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregHistory.conception_method">
+<tt class="descname">conception_method</tt><a class="headerlink" href="#IPsaraasRePregHistory.conception_method" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Welches war Ihre letzte Methode zur Schwangerschaftsverhütung?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>BIRTH_CONTROL_PILL [Antibabypille]</li>
+<li>ETONOGESTREL_CONTRACEPTIVE_IMPLANT [Hormonstäbchen-Implantat (Implanon NTX®)]</li>
+<li>INJECTABLE_DEPOT_CONTRACEPTIVE [Dreimonatsspritze (Depot-Provera®)]</li>
+<li>CONTRACEPTIVE_VAGINALRING [Vaginalring (Nuvaring®)]</li>
+<li>INTRAUTERINE_DEVICE_WITH_PROGESTOGEN [Hormonspirale]</li>
+<li>INTRAUTERINE_DEVICE [Kupferspirale]</li>
+<li>CONDOM [Kondom]</li>
+<li>NONE [Keine]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregHistory.fertility_center">
+<tt class="descname">fertility_center</tt><a class="headerlink" href="#IPsaraasRePregHistory.fertility_center" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Waren Sie vor dieser Schwangerschaft in einem Kinderwunschzentrum in Behandlung?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregHistory.fertility_treatment">
+<tt class="descname">fertility_treatment</tt><a class="headerlink" href="#IPsaraasRePregHistory.fertility_treatment" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Behandlung in Kinderwunschzentrum</p>
+<dl class="docutils">
+<dt>Values [multiple]</dt>
+<dd><ul class="first last simple">
+<li>HORMONAL_STIMULATION [Hormonelle Stimulation]</li>
+<li>INSEMINATION [Insemination (künstliche Befruchtung)]</li>
+<li>IVF [IVF (In vitro Fertilisation)]</li>
+<li>ICSI [ICSI (Intrazytoplasmatische Spermieninjektion)]</li>
+<li>EGG_DONATION [Eizellspende]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregHistory.own_birth">
+<tt class="descname">own_birth</tt><a class="headerlink" href="#IPsaraasRePregHistory.own_birth" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie wurden Sie geboren?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>VAGINAL_BIRTH [Vaginale Geburt]</li>
+<li>CAESAREAN_SECTION [Kaiserschnitt (Sectio caesarea)]</li>
+<li>UNKNOWN [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregHistory.mothers_milk">
+<tt class="descname">mothers_milk</tt><a class="headerlink" href="#IPsaraasRePregHistory.mothers_milk" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wurden Sie als Baby mit Muttermilch ernährt?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepregfirsttrimester">
+<h2>IPsaraasRePregFirstTrimester<a class="headerlink" href="#ipsaraasrepregfirsttrimester" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregFirstTrimester">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregFirstTrimester</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregFirstTrimester" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregFirstTrimester.pregnant">
+<tt class="descname">pregnant</tt><a class="headerlink" href="#IPsaraasRePregFirstTrimester.pregnant" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Schwangerschaft</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ich bin schwanger]</li>
+<li>NO [Ich bin nicht mehr schwanger]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregFirstTrimester.calculated_due_date">
+<tt class="descname">calculated_due_date</tt><a class="headerlink" href="#IPsaraasRePregFirstTrimester.calculated_due_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Wann ist der errechnete Geburtstermin (ET)?</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepregsecondtrimester">
+<h2>IPsaraasRePregSecondTrimester<a class="headerlink" href="#ipsaraasrepregsecondtrimester" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregSecondTrimester">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregSecondTrimester</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregSecondTrimester" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregSecondTrimester.pregnant">
+<tt class="descname">pregnant</tt><a class="headerlink" href="#IPsaraasRePregSecondTrimester.pregnant" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Schwangerschaft</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ich bin schwanger]</li>
+<li>NO [Ich bin nicht mehr schwanger]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregSecondTrimester.calculated_due_date">
+<tt class="descname">calculated_due_date</tt><a class="headerlink" href="#IPsaraasRePregSecondTrimester.calculated_due_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Wann ist der errechnete Geburtstermin (ET)?</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregSecondTrimester.end_pregnancy_second_trimester">
+<tt class="descname">end_pregnancy_second_trimester</tt><a class="headerlink" href="#IPsaraasRePregSecondTrimester.end_pregnancy_second_trimester" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Ich bin nicht mehr schwanger aufgrund einer</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>MISCARRIAGE [Fehlgeburt]</li>
+<li>ABORTION [Abbruch der Schwangerschaft aus medizinischen Gründen]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepregthirdtrimester">
+<h2>IPsaraasRePregThirdTrimester<a class="headerlink" href="#ipsaraasrepregthirdtrimester" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregThirdTrimester">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregThirdTrimester</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregThirdTrimester" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregThirdTrimester.pregnant">
+<tt class="descname">pregnant</tt><a class="headerlink" href="#IPsaraasRePregThirdTrimester.pregnant" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Schwangerschaft</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ich bin schwanger]</li>
+<li>NO [Ich bin nicht mehr schwanger]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregThirdTrimester.calculated_due_date">
+<tt class="descname">calculated_due_date</tt><a class="headerlink" href="#IPsaraasRePregThirdTrimester.calculated_due_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Wann ist der errechnete Geburtstermin (ET)?</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregThirdTrimester.end_pregnancy_third_trimester">
+<tt class="descname">end_pregnancy_third_trimester</tt><a class="headerlink" href="#IPsaraasRePregThirdTrimester.end_pregnancy_third_trimester" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Ich bin nicht mehr schwanger aufgrund einer</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>MISCARRIAGE [Fehlgeburt (Geburt vor der 24 SSW)]</li>
+<li>PREMATURITY [Frühgeburt (Geburt zwischen 24 und 37 SSW)]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregThirdTrimester.prematurity_week">
+<tt class="descname">prematurity_week</tt><a class="headerlink" href="#IPsaraasRePregThirdTrimester.prematurity_week" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>In welcher Schwangerschaftswoche (SSW)?</p>
+<p>Min-Value: 24</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregThirdTrimester.prematurity_born_alive">
+<tt class="descname">prematurity_born_alive</tt><a class="headerlink" href="#IPsaraasRePregThirdTrimester.prematurity_born_alive" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wurde Ihr Kind lebend geboren?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepregriskfactors">
+<h2>IPsaraasRePregRiskFactors<a class="headerlink" href="#ipsaraasrepregriskfactors" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregRiskFactors">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregRiskFactors</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregRiskFactors" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregRiskFactors.infection">
+<tt class="descname">infection</tt><a class="headerlink" href="#IPsaraasRePregRiskFactors.infection" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Haben Sie momentan oder hatten Sie in den letzten 4 Wochen einen Infekt (zum Beispiel: Erkältung, Blasenentzündung, vaginaler Infekt)?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregRiskFactors.infection_fever">
+<tt class="descname">infection_fever</tt><a class="headerlink" href="#IPsaraasRePregRiskFactors.infection_fever" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Mit Fieber?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregRiskFactors.smoked">
+<tt class="descname">smoked</tt><a class="headerlink" href="#IPsaraasRePregRiskFactors.smoked" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Haben Sie in den letzten drei Monaten geraucht?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregRiskFactors.alcoholic_beverages">
+<tt class="descname">alcoholic_beverages</tt><a class="headerlink" href="#IPsaraasRePregRiskFactors.alcoholic_beverages" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Haben Sie in den letzten drei Monaten alkoholische Getränke getrunken?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregRiskFactors.blood_thinner">
+<tt class="descname">blood_thinner</tt><a class="headerlink" href="#IPsaraasRePregRiskFactors.blood_thinner" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Haben Sie in den letzten 3 Monaten Spritzen zur Blutverdünnung (Heparin) (zum Beispiel Fraxiparin®, Clexane®, Fragmin®) genommen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregRiskFactors.folic_acid">
+<tt class="descname">folic_acid</tt><a class="headerlink" href="#IPsaraasRePregRiskFactors.folic_acid" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Haben Sie in den letzten 3 Monaten Folsäure (separat oder enthalten in Multivitaminpräparaten) eingenommen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregRiskFactors.aspirin">
+<tt class="descname">aspirin</tt><a class="headerlink" href="#IPsaraasRePregRiskFactors.aspirin" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Haben Sie in den letzten 3 Monaten niedrig dosiertes Aspirin (zum Beispiel: Aspirin cardio®, ASS cardio, Aspégic®) eingenommen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepregpostpartum">
+<h2>IPsaraasRePregPostPartum<a class="headerlink" href="#ipsaraasrepregpostpartum" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregPostPartum">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregPostPartum</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregPostPartum" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregPostPartum.number_of_children">
+<tt class="descname">number_of_children</tt><a class="headerlink" href="#IPsaraasRePregPostPartum.number_of_children" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Anzahl Kinder</p>
+<p>Min-Value: 1</p>
+<p>Max-Value: 4</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregPostPartum.preeclampsia">
+<tt class="descname">preeclampsia</tt><a class="headerlink" href="#IPsaraasRePregPostPartum.preeclampsia" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Hatte die Patientin Zeichen einer Präeklampsie?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregPostPartum.preeclampsia_date">
+<tt class="descname">preeclampsia_date</tt><a class="headerlink" href="#IPsaraasRePregPostPartum.preeclampsia_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Beginn</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregPostPartum.hellp_syndrome">
+<tt class="descname">hellp_syndrome</tt><a class="headerlink" href="#IPsaraasRePregPostPartum.hellp_syndrome" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Hatte die Patientin Zeichen eines HELLP-Syndroms?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregPostPartum.hellp_syndrome_date">
+<tt class="descname">hellp_syndrome_date</tt><a class="headerlink" href="#IPsaraasRePregPostPartum.hellp_syndrome_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Beginn</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregPostPartum.gestational_diabetes">
+<tt class="descname">gestational_diabetes</tt><a class="headerlink" href="#IPsaraasRePregPostPartum.gestational_diabetes" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Hatte die Patientin Zeichen eines Gestationsdiabetes?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregPostPartum.gestational_diabetes_date">
+<tt class="descname">gestational_diabetes_date</tt><a class="headerlink" href="#IPsaraasRePregPostPartum.gestational_diabetes_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Beginn</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepregbreastfeeding">
+<h2>IPsaraasRePregBreastfeeding<a class="headerlink" href="#ipsaraasrepregbreastfeeding" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregBreastfeeding">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregBreastfeeding</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregBreastfeeding" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregBreastfeeding.mastitis_puerperalis">
+<tt class="descname">mastitis_puerperalis</tt><a class="headerlink" href="#IPsaraasRePregBreastfeeding.mastitis_puerperalis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Hatten Sie eine Mastitis puerperalis (Brustentzündung)?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregBreastfeeding.mastitis_puerperalis_number">
+<tt class="descname">mastitis_puerperalis_number</tt><a class="headerlink" href="#IPsaraasRePregBreastfeeding.mastitis_puerperalis_number" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Anzahl</p>
+<p>Min-Value: 1</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregBreastfeeding.mastitis_puerperalis_ab_therapy">
+<tt class="descname">mastitis_puerperalis_ab_therapy</tt><a class="headerlink" href="#IPsaraasRePregBreastfeeding.mastitis_puerperalis_ab_therapy" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Therapie mit Antibiotika?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepregpsychological">
+<h2>IPsaraasRePregPsychological<a class="headerlink" href="#ipsaraasrepregpsychological" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregPsychological">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregPsychological</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregPsychological" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregPsychological.postpartum_depression">
+<tt class="descname">postpartum_depression</tt><a class="headerlink" href="#IPsaraasRePregPsychological.postpartum_depression" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Hatten Sie im Laufe des ersten Jahres nach der Geburt eine postpartale Depression, die behandelt werden musste (mit Medikamenten oder Psychotherapie)?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaspreviouspregnancy">
+<h2>IPsaraasPreviousPregnancy<a class="headerlink" href="#ipsaraaspreviouspregnancy" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasPreviousPregnancy">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasPreviousPregnancy</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasPreviousPregnancy" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasPreviousPregnancy.present">
+<tt class="descname">present</tt><a class="headerlink" href="#IPsaraasPreviousPregnancy.present" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPreviousPregnancy.typ">
+<tt class="descname">typ</tt><a class="headerlink" href="#IPsaraasPreviousPregnancy.typ" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Art der Geburt</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>ONTERM_DELIVERY [Termingeburt]</li>
+<li>PRETERM_DELIVERY [Frühgeburt]</li>
+<li>MISCARRIAGE [Fehlgeburt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPreviousPregnancy.date">
+<tt class="descname">date</tt><a class="headerlink" href="#IPsaraasPreviousPregnancy.date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Geburtsdatum</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPreviousPregnancy.week_of_pregnancy">
+<tt class="descname">week_of_pregnancy</tt><a class="headerlink" href="#IPsaraasPreviousPregnancy.week_of_pregnancy" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>SSW</p>
+<p>Min-Value: 1</p>
+<p>Max-Value: 44</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPreviousPregnancy.birth_weight_kg">
+<tt class="descname">birth_weight_kg</tt><a class="headerlink" href="#IPsaraasPreviousPregnancy.birth_weight_kg" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Geburtsgewicht in kg</p>
+<p>Min-Value: 0.3</p>
+<p>Max-Value: 6.0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPreviousPregnancy.miscarriage_reason">
+<tt class="descname">miscarriage_reason</tt><a class="headerlink" href="#IPsaraasPreviousPregnancy.miscarriage_reason" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Art der Fehlgeburt</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>SPONTANEOUS [Spontan]</li>
+<li>INDUCED [Induziert]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPreviousPregnancy.miscarriage_induced_reason">
+<tt class="descname">miscarriage_induced_reason</tt><a class="headerlink" href="#IPsaraasPreviousPregnancy.miscarriage_induced_reason" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Grund</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>DISEASE_MOTHER [Mütterliche Krankheit]</li>
+<li>ABNORMALITY_CHILD [Kindliche Auffälligkeiten]</li>
+<li>PERSONAL_REASONS [Persönliche Gründe]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPreviousPregnancy.complication">
+<tt class="descname">complication</tt><a class="headerlink" href="#IPsaraasPreviousPregnancy.complication" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Komplikationen</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaschildstate">
+<h2>IPsaraasChildState<a class="headerlink" href="#ipsaraaschildstate" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasChildState">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasChildState</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasChildState" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasChildState.date">
+<tt class="descname">date</tt><a class="headerlink" href="#IPsaraasChildState.date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildState.pregnancy_index">
+<tt class="descname">pregnancy_index</tt><a class="headerlink" href="#IPsaraasChildState.pregnancy_index" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildState.child_index">
+<tt class="descname">child_index</tt><a class="headerlink" href="#IPsaraasChildState.child_index" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildState.child_name">
+<tt class="descname">child_name</tt><a class="headerlink" href="#IPsaraasChildState.child_name" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Name des Kindes</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildState.weight_kg">
+<tt class="descname">weight_kg</tt><a class="headerlink" href="#IPsaraasChildState.weight_kg" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Aktuelles Gewicht von ${child_name} in kg?</p>
+<p>Min-Value: 0.5</p>
+<p>Max-Value: 30.0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildState.height_cm">
+<tt class="descname">height_cm</tt><a class="headerlink" href="#IPsaraasChildState.height_cm" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Aktuelle Grösse von ${child_name} in cm?</p>
+<p>Min-Value: 20.0</p>
+<p>Max-Value: 130.0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildState.head_circumference_cm">
+<tt class="descname">head_circumference_cm</tt><a class="headerlink" href="#IPsaraasChildState.head_circumference_cm" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Aktueller Kopfumfang von ${child_name} in cm?</p>
+<p>Min-Value: 25.0</p>
+<p>Max-Value: 60.0</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaschildstatenutrition">
+<h2>IPsaraasChildStateNutrition<a class="headerlink" href="#ipsaraaschildstatenutrition" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasChildStateNutrition">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasChildStateNutrition</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasChildStateNutrition" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasChildStateNutrition.child_mothers_milk">
+<tt class="descname">child_mothers_milk</tt><a class="headerlink" href="#IPsaraasChildStateNutrition.child_mothers_milk" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Ernähren Sie ${child_name} mit Muttermilch?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildStateNutrition.child_mothers_milk_extend">
+<tt class="descname">child_mothers_milk_extend</tt><a class="headerlink" href="#IPsaraasChildStateNutrition.child_mothers_milk_extend" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Ernährung mit Muttermilch</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>EXCLUSIVELY [Ausschliesslich (ohne zusätzliche Gabe von Wasser, Tee, Saft, Flaschenmilchnahrung)]</li>
+<li>PARTIALLY [Teilweise (mit zusätzlicher Gabe von Wasser, Tee, Saft, Flaschenmilchnahrung)]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaschildbirthcomplication">
+<h2>IPsaraasChildBirthComplication<a class="headerlink" href="#ipsaraaschildbirthcomplication" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasChildBirthComplication">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasChildBirthComplication</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasChildBirthComplication" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasChildBirthComplication.nature_of_birth">
+<tt class="descname">nature_of_birth</tt><a class="headerlink" href="#IPsaraasChildBirthComplication.nature_of_birth" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie wurde das Kind geboren?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>LIVE_BIRTH [Lebendgeburt]</li>
+<li>STILLBIRTH [Totgeburt]</li>
+<li>FETAL_DEATH [Intrauteriner Fruchttod]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirthComplication.date_of_birth">
+<tt class="descname">date_of_birth</tt><a class="headerlink" href="#IPsaraasChildBirthComplication.date_of_birth" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Geburtsdatum</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirthComplication.child_name">
+<tt class="descname">child_name</tt><a class="headerlink" href="#IPsaraasChildBirthComplication.child_name" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Name des Kindes</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirthComplication.born_healthy">
+<tt class="descname">born_healthy</tt><a class="headerlink" href="#IPsaraasChildBirthComplication.born_healthy" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wurde das Kind gesund geboren?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirthComplication.complications_after_birth">
+<tt class="descname">complications_after_birth</tt><a class="headerlink" href="#IPsaraasChildBirthComplication.complications_after_birth" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Komplikationen nach der Geburt?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirthComplication.hyperbilirubinemia">
+<tt class="descname">hyperbilirubinemia</tt><a class="headerlink" href="#IPsaraasChildBirthComplication.hyperbilirubinemia" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Hatte Ihr Kind eine Hyperbilirubinämie/Neugeborenen-Gelbsucht, die mit Fototherapie behandelt wurde?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirthComplication.moved_special_department">
+<tt class="descname">moved_special_department</tt><a class="headerlink" href="#IPsaraasChildBirthComplication.moved_special_department" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wurde das Neugeborene auf eine Spezialabteilung verlegt?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirthComplication.infections_treated">
+<tt class="descname">infections_treated</tt><a class="headerlink" href="#IPsaraasChildBirthComplication.infections_treated" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Infekte, die mit Antibiotika therapiert werden mussten?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirthComplication.diseases">
+<tt class="descname">diseases</tt><a class="headerlink" href="#IPsaraasChildBirthComplication.diseases" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Krankheiten?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirthComplication.deformities">
+<tt class="descname">deformities</tt><a class="headerlink" href="#IPsaraasChildBirthComplication.deformities" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Fehlbildungen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaschildcomplication">
+<h2>IPsaraasChildComplication<a class="headerlink" href="#ipsaraaschildcomplication" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasChildComplication">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasChildComplication</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasChildComplication" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasChildComplication.vaccine_reaction">
+<tt class="descname">vaccine_reaction</tt><a class="headerlink" href="#IPsaraasChildComplication.vaccine_reaction" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Hatte das Kind jemals Impfreaktionen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildComplication.allergies">
+<tt class="descname">allergies</tt><a class="headerlink" href="#IPsaraasChildComplication.allergies" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Hatte das Kind jemals Allergien?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildComplication.severe_infections">
+<tt class="descname">severe_infections</tt><a class="headerlink" href="#IPsaraasChildComplication.severe_infections" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Hatte das Kind jemals schwere Infekte (AB-Therapie, Hosp.)?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildComplication.autoimmune_diseases">
+<tt class="descname">autoimmune_diseases</tt><a class="headerlink" href="#IPsaraasChildComplication.autoimmune_diseases" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Hatte das Kind jemals Autoimmunerkrankungen (Diabetes, Rheuma)?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildComplication.cancer">
+<tt class="descname">cancer</tt><a class="headerlink" href="#IPsaraasChildComplication.cancer" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Hatte das Kind jemals Krebserkrankung?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaschildbirth">
+<h2>IPsaraasChildBirth<a class="headerlink" href="#ipsaraaschildbirth" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasChildBirth">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasChildBirth</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasChildBirth" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasChildBirth.birth_week_of_pregnancy">
+<tt class="descname">birth_week_of_pregnancy</tt><a class="headerlink" href="#IPsaraasChildBirth.birth_week_of_pregnancy" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Schwangerschaftswoche bei der Geburt?</p>
+<p>Min-Value: 1</p>
+<p>Max-Value: 44</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirth.gender">
+<tt class="descname">gender</tt><a class="headerlink" href="#IPsaraasChildBirth.gender" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Geschlecht von ${child_name}?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>MALE [männlich]</li>
+<li>FEMALE [weiblich]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirth.birth_weight_kg">
+<tt class="descname">birth_weight_kg</tt><a class="headerlink" href="#IPsaraasChildBirth.birth_weight_kg" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Gewicht von ${child_name} bei der Geburt in kg (z.B. 3.5 kg)?</p>
+<p>Min-Value: 0.3</p>
+<p>Max-Value: 6.0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirth.birth_height_cm">
+<tt class="descname">birth_height_cm</tt><a class="headerlink" href="#IPsaraasChildBirth.birth_height_cm" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Grösse von ${child_name} bei der Geburt in cm?</p>
+<p>Min-Value: 20.0</p>
+<p>Max-Value: 60.0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirth.birth_head_circumference_cm">
+<tt class="descname">birth_head_circumference_cm</tt><a class="headerlink" href="#IPsaraasChildBirth.birth_head_circumference_cm" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Kopfumfang von ${child_name} bei der Geburt in cm?</p>
+<p>Min-Value: 25.0</p>
+<p>Max-Value: 45.0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirth.apgar_score">
+<tt class="descname">apgar_score</tt><a class="headerlink" href="#IPsaraasChildBirth.apgar_score" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Apgar-Score von ${child_name} (Beispiel: 9-9-10)?</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasChildBirth.type_of_birth">
+<tt class="descname">type_of_birth</tt><a class="headerlink" href="#IPsaraasChildBirth.type_of_birth" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie wurde ${child_name} geboren?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>VAGINAL_BIRTH [Vaginale Geburt]</li>
+<li>PRIMARY_CAESAREAN_SECTION [Geplanter Kaiserschnitt]</li>
+<li>SECONDARY_CAESAREAN_SECTION [Ungeplanter Kaiserschnitt (sek. Sectio caesarea; Kaiserschnitt aufgrund einer Notfallsituation oder aufgrund des Geburtsverlaufs aus mütterlicher oder kindlicher Indikation)]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepregradai">
+<h2>IPsaraasRePregRADAI<a class="headerlink" href="#ipsaraasrepregradai" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregRADAI">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregRADAI</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregRADAI" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregRADAI.activity_of_rheumatic_disease_last_6_months_radai">
+<tt class="descname">activity_of_rheumatic_disease_last_6_months_radai</tt><a class="headerlink" href="#IPsaraasRePregRADAI.activity_of_rheumatic_disease_last_6_months_radai" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie aktiv war Ihre Arthritis (entzündliche Gelenkserkrankung) im allgemeinen während der &lt;span class=&#8221;pi_flashy&#8221;&gt;letzten sechs Monate&lt;span&gt;?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregRADAI.activity_of_rheumatic_disease_today_radai">
+<tt class="descname">activity_of_rheumatic_disease_today_radai</tt><a class="headerlink" href="#IPsaraasRePregRADAI.activity_of_rheumatic_disease_today_radai" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie aktiv ist Ihre Arthritis &lt;span class=&#8221;pi_flashy&#8221;&gt;heute&lt;/span&gt; bezüglich &lt;span class=&#8221;pi_flashy&#8221;&gt;Druckempfindlichkeit und Schwellung&lt;/span&gt; der Gelenke?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregRADAI.pain_level_today_radai">
+<tt class="descname">pain_level_today_radai</tt><a class="headerlink" href="#IPsaraasRePregRADAI.pain_level_today_radai" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie stark ist Ihr &lt;span class=&#8221;pi_flashy&#8221;&gt;Arthritis - Schmerz heute&lt;/span&gt;?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregRADAI.morning_stiffness_duration_radai">
+<tt class="descname">morning_stiffness_duration_radai</tt><a class="headerlink" href="#IPsaraasRePregRADAI.morning_stiffness_duration_radai" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie lange dauerte gestern die Morgensteifigkeit in Ihren Gelenken an?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>NO [Keine Morgensteifigkeit]</li>
+<li>LESS_THAN_30_MINUTES [Weniger als 30 Minuten]</li>
+<li>30_MINUTES_TO_1_HOUR [30 Minuten bis 1 Stunde]</li>
+<li>12_HOURS [1-2 Stunden]</li>
+<li>24_HOURS [2-4 Stunden]</li>
+<li>MORE_THAN_4_HOURS [Mehr als 4 Stunden]</li>
+<li>ALL_DAY [Den ganzen Tag]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregRADAI.how_do_you_feel_your_health_condition_is_today">
+<tt class="descname">how_do_you_feel_your_health_condition_is_today</tt><a class="headerlink" href="#IPsaraasRePregRADAI.how_do_you_feel_your_health_condition_is_today" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie beurteilen Sie &lt;span class=&#8221;pi_flashy&#8221;&gt;heute&lt;/span&gt; Ihren Gesundheitszustand insgesamt?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepregbasdai">
+<h2>IPsaraasRePregBASDAI<a class="headerlink" href="#ipsaraasrepregbasdai" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregBASDAI">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregBASDAI</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregBASDAI" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregBASDAI.basdai_1">
+<tt class="descname">basdai_1</tt><a class="headerlink" href="#IPsaraasRePregBASDAI.basdai_1" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie würden Sie Ihre allgemeine Müdigkeit und Erschöpfung durchschnittlich in den letzten 7 Tagen beschreiben?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregBASDAI.basdai_2">
+<tt class="descname">basdai_2</tt><a class="headerlink" href="#IPsaraasRePregBASDAI.basdai_2" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie stark waren Ihre Schmerzen in Nacken, Rücken oder Hüfte durchschnittlich in den letzten 7 Tagen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregBASDAI.basdai_3">
+<tt class="descname">basdai_3</tt><a class="headerlink" href="#IPsaraasRePregBASDAI.basdai_3" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie stark waren Ihre Schmerzen oder Schwellungen in anderen Gelenken durchschnittlich in den letzten 7 Tagen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregBASDAI.basdai_4">
+<tt class="descname">basdai_4</tt><a class="headerlink" href="#IPsaraasRePregBASDAI.basdai_4" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie unangenehm waren für Sie besonders berührungs- oder druckempfindliche Körperstellen durchschnittlich in den letzten 7 Tagen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregBASDAI.basdai_5">
+<tt class="descname">basdai_5</tt><a class="headerlink" href="#IPsaraasRePregBASDAI.basdai_5" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie ausgeprägt war Ihre Morgensteifigkeit nach dem Aufwachen durchschnittlich in den letzten 7 Tagen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregBASDAI.basdai_6">
+<tt class="descname">basdai_6</tt><a class="headerlink" href="#IPsaraasRePregBASDAI.basdai_6" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie lange dauert diese Morgensteifigkeit im Allgemeinen durchschnittlich in den letzten 7 Tagen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregBASDAI.global_patient_estimate_disease_activity">
+<tt class="descname">global_patient_estimate_disease_activity</tt><a class="headerlink" href="#IPsaraasRePregBASDAI.global_patient_estimate_disease_activity" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie aktiv ist Ihre Krankheit &lt;span class=&#8221;pi_flashy&#8221;&gt;heute&lt;/span&gt;?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepregpsa">
+<h2>IPsaraasRePregPSA<a class="headerlink" href="#ipsaraasrepregpsa" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregPSA">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregPSA</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregPSA" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregPSA.psa_activity_last_24_hours">
+<tt class="descname">psa_activity_last_24_hours</tt><a class="headerlink" href="#IPsaraasRePregPSA.psa_activity_last_24_hours" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie aktiv war Ihre Krankheit &lt;span class=&#8221;pi_flashy&#8221;&gt;in den letzten 24 Stunden&lt;/span&gt;?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregPSA.joint_pain_last_24_hours">
+<tt class="descname">joint_pain_last_24_hours</tt><a class="headerlink" href="#IPsaraasRePregPSA.joint_pain_last_24_hours" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie stark waren Ihre Gelenkschmerzen &lt;span class=&#8221;pi_flashy&#8221;&gt;in den letzten 24 Stunden&lt;/span&gt;?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2 [2]</li>
+<li>3 [3]</li>
+<li>4 [4]</li>
+<li>5 [5]</li>
+<li>6 [6]</li>
+<li>7 [7]</li>
+<li>8 [8]</li>
+<li>9 [9]</li>
+<li>10 [10]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregPSA.extent_skin_infestation">
+<tt class="descname">extent_skin_infestation</tt><a class="headerlink" href="#IPsaraasRePregPSA.extent_skin_infestation" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie schätzen Sie das &lt;span class=&#8221;pi_flashy&#8221;&gt;momentane&lt;/span&gt; Ausmass Ihres Hautbefalls ein?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>NO_INFESTATION [kein Befall]</li>
+<li>ALMOST_NO_INFESTATION [fast kein Befall]</li>
+<li>SMALL_INFESTATION [leichter Befall]</li>
+<li>SMALL_TO_MEDIUM_INFESTATION [leichter bis mässiger Befall]</li>
+<li>MEDIUM_INFESTATION [mässiger Befall]</li>
+<li>MEDIUM_TO_STRONG_INFESTATION [mässiger bis schwerer Befall]</li>
+<li>STRONG_INFESTATION [schwerer Befall]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraasrepregsteroids">
+<h2>IPsaraasRePregSteroids<a class="headerlink" href="#ipsaraasrepregsteroids" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.repreg.interfaces.IPsaraasRePregSteroids">
+<em class="property">interface </em><tt class="descclassname">psaraas.repreg.interfaces.</tt><tt class="descname">IPsaraasRePregSteroids</tt><a class="headerlink" href="#psaraas.repreg.interfaces.IPsaraasRePregSteroids" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasRePregSteroids.steroids_used">
+<tt class="descname">steroids_used</tt><a class="headerlink" href="#IPsaraasRePregSteroids.steroids_used" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Nehmen Sie Kortisonpräparate wie z.B. Prednison, Spiricort oder Lodotra?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasRePregSteroids.steroids_dosage">
+<tt class="descname">steroids_dosage</tt><a class="headerlink" href="#IPsaraasRePregSteroids.steroids_dosage" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wie viele mg Kortisonpräparate haben Sie im Durchschnitt pro Tag in den letzten 7 Tagen genommen?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>1.25mg [1.25 mg]</li>
+<li>2.5mg [2.5 mg]</li>
+<li>5mg [5 mg]</li>
+<li>7.5mg [7.5 mg]</li>
+<li>10mg [10 mg]</li>
+<li>12.5 mg [12.5 mg]</li>
+<li>15mg [15 mg]</li>
+<li>17.5mg [17.5 mg]</li>
+<li>20mg [20 mg]</li>
+<li>25mg [25 mg]</li>
+<li>30mg [30 mg]</li>
+<li>40mg [40 mg]</li>
+<li>50mg [50 mg]</li>
+<li>60mg [60 mg]</li>
+<li>70mg [70 mg]</li>
+<li>80mg [80 mg]</li>
+<li>90mg [90 mg]</li>
+<li>100mg [100 mg]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Inhalt</a></h3>
+            <ul>
+<li><a class="reference external" href="#">RePreg</a><ul>
+<li><a class="reference external" href="#ipsaraasrepreg">IPsaraasRePreg</a></li>
+<li><a class="reference external" href="#ipsaraasrepreghistory">IPsaraasRePregHistory</a></li>
+<li><a class="reference external" href="#ipsaraasrepregfirsttrimester">IPsaraasRePregFirstTrimester</a></li>
+<li><a class="reference external" href="#ipsaraasrepregsecondtrimester">IPsaraasRePregSecondTrimester</a></li>
+<li><a class="reference external" href="#ipsaraasrepregthirdtrimester">IPsaraasRePregThirdTrimester</a></li>
+<li><a class="reference external" href="#ipsaraasrepregriskfactors">IPsaraasRePregRiskFactors</a></li>
+<li><a class="reference external" href="#ipsaraasrepregpostpartum">IPsaraasRePregPostPartum</a></li>
+<li><a class="reference external" href="#ipsaraasrepregbreastfeeding">IPsaraasRePregBreastfeeding</a></li>
+<li><a class="reference external" href="#ipsaraasrepregpsychological">IPsaraasRePregPsychological</a></li>
+<li><a class="reference external" href="#ipsaraaspreviouspregnancy">IPsaraasPreviousPregnancy</a></li>
+<li><a class="reference external" href="#ipsaraaschildstate">IPsaraasChildState</a></li>
+<li><a class="reference external" href="#ipsaraaschildstatenutrition">IPsaraasChildStateNutrition</a></li>
+<li><a class="reference external" href="#ipsaraaschildbirthcomplication">IPsaraasChildBirthComplication</a></li>
+<li><a class="reference external" href="#ipsaraaschildcomplication">IPsaraasChildComplication</a></li>
+<li><a class="reference external" href="#ipsaraaschildbirth">IPsaraasChildBirth</a></li>
+<li><a class="reference external" href="#ipsaraasrepregradai">IPsaraasRePregRADAI</a></li>
+<li><a class="reference external" href="#ipsaraasrepregbasdai">IPsaraasRePregBASDAI</a></li>
+<li><a class="reference external" href="#ipsaraasrepregpsa">IPsaraasRePregPSA</a></li>
+<li><a class="reference external" href="#ipsaraasrepregsteroids">IPsaraasRePregSteroids</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Vorheriges Thema</h4>
+            <p class="topless"><a href="cvc.html"
+                                  title="vorheriges Kapitel">Cardiovascular Chevallier</a></p>
+            <h4>Nächstes Thema</h4>
+            <p class="topless"><a href="patientapps.html"
+                                  title="nächstes Kapitel">PatientApps</a></p>
+            <h3>Diese Seite</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/repreg.txt"
+                     rel="nofollow">Quelltext anzeigen</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Schnellsuche</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Los" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="patientapps.html" title="PatientApps"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="cvc.html" title="Cardiovascular Chevallier"
+             >zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" >PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2017, seantis gmbh.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.7 erstellt.
+    </div>
+  </body>
+</html>

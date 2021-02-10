@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Medication &mdash; PsARAAS v4.30 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '4.30',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="PsARAAS v4.30 documentation" href="index.html" />
+    <link rel="up" title="PsARAAS Content Type Interfaces" href="interfaces.html" />
+    <link rel="next" title="Adverse Event" href="adverseevent.html" />
+    <link rel="prev" title="Visit" href="visit.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="adverseevent.html" title="Adverse Event"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="visit.html" title="Visit"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" accesskey="U">PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="medication">
+<h1>Medication<a class="headerlink" href="#medication" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="ipsaraasordination">
+<h2>IPsaraasOrdination<a class="headerlink" href="#ipsaraasordination" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="Products.PsaraasPatient.interfaces.IPsaraasOrdination">
+<em class="property">interface </em><tt class="descclassname">Products.PsaraasPatient.interfaces.</tt><tt class="descname">IPsaraasOrdination</tt><a class="headerlink" href="#Products.PsaraasPatient.interfaces.IPsaraasOrdination" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>PsaraasOrdination interface</p>
+<dl class="attribute">
+<dt id="IPsaraasOrdination.start_date">
+<tt class="descname">start_date</tt><a class="headerlink" href="#IPsaraasOrdination.start_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Start</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasOrdination.drug">
+<tt class="descname">drug</tt><a class="headerlink" href="#IPsaraasOrdination.drug" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Verschriebene Medikation</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>BIOLOGIC_ABATACEPT [Abatacept (Orencia)]</li>
+<li>BIOLOGIC_ADALIMUMAB [Adalimumab (Humira)]</li>
+<li>BIOLOGIC_AMGEVITA [Adalimumab (Amgevita)]</li>
+<li>BIOLOGIC_HULIO [Adalimumab (Hulio)]</li>
+<li>BIOLOGIC_HYRIMOZ [Adalimumab (Hyrimoz)]</li>
+<li>BIOLOGIC_ANAKINRA [Anakinra (Kineret)]</li>
+<li>BIOLOGIC_APREMILAST [Apremilast (Otezla)]</li>
+<li>DMARD_AZATH [Azathioprine]</li>
+<li>BIOLOGIC_BARICITINIB [Baricitinib (Olumiant)]</li>
+<li>BIOLOGIC_CERTOLIZUMAB [Certolizumab pegol (Cimzia)]</li>
+<li>DMARD_CYCLO [Cyclophosphamide]</li>
+<li>DMARD_CYA [Cyclosporine]</li>
+<li>BIOLOGIC_ETANERCEPT [Etanercept (Enbrel)]</li>
+<li>BIOLOGIC_BENEPALI [Etanercept (Benepali)]</li>
+<li>BIOLOGIC_ERELZI [Etanercept (Erelzi)]</li>
+<li>BIOLOGIC_GOLIMUMAB [Golimumab (Simponi)]</li>
+<li>DMARD_CHLOROCHINE [Hydroxychloroquine]</li>
+<li>BIOLOGIC_INFLIXIMAB [Infliximab (Remicade)]</li>
+<li>BIOLOGIC_INFLECTRA [Infliximab (Inflectra)]</li>
+<li>BIOLOGIC_REMSIMA [Infliximab (Remsima)]</li>
+<li>BIOLOGIC_IXEKIZUMAB [Ixekizumab (Taltz)]</li>
+<li>DMARD_LEFLUN [Leflunomide]</li>
+<li>DMARD_MTX [Methotrexate]</li>
+<li>PREDNISON_STEROID [Prednison / Steroid (Basistherapie &gt; 3 Mo)]</li>
+<li>PREDNISON_STEROID_MR [Prednison MR (Lodotra) (Basistherapie &gt; 3 Mo)]</li>
+<li>BIOLOGIC_RITUXIMAB [Rituximab (MabThera)]</li>
+<li>BIOLOGIC_RIXATHON [Rituximab (Rixathon)]</li>
+<li>BIOLOGIC_TRUXIMA [Rituximab (Truxima)]</li>
+<li>DMARD_SZS [Salazopyrin]</li>
+<li>BIOLOGIC_SARILUMAB [Sarilumab (Kevzara)]</li>
+<li>BIOLOGIC_SECUKINUMAB [Secukinumab (Cosentyx)]</li>
+<li>BIOLOGIC_TOCILIZUMAB [Tocilizumab (Actemra)]</li>
+<li>BIOLOGIC_TOFACITINIB [Tofacitinib (Xeljanz)]</li>
+<li>BIOLOGIC_UPADACITINIB [Upadacitinib (Rinvoq)]</li>
+<li>BIOLOGIC_USTEKINUMAB [Ustekinumab (Stelara)]</li>
+<li>BIOLOGIC_PROJECT_MEDICINE [Blinded project medication]</li>
+<li>OTHER_MEDICATION [Andere (Kommentar hinzufügen)]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasOrdination.dose">
+<tt class="descname">dose</tt><a class="headerlink" href="#IPsaraasOrdination.dose" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Dosis (mg)</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasOrdination.route">
+<tt class="descname">route</tt><a class="headerlink" href="#IPsaraasOrdination.route" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Applikationsform</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>SC [sc]</li>
+<li>IV [iv]</li>
+<li>IM [im]</li>
+<li>PO [po]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasOrdination.frequence">
+<tt class="descname">frequence</tt><a class="headerlink" href="#IPsaraasOrdination.frequence" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Dosierungsintervall</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>BIOFREQ_TWICE_DAILY [zwei Mal pro Tag]</li>
+<li>BIOFREQ_DAILY [täglich]</li>
+<li>BIOFREQ_EVERY_2_DAYS [alle 2 Tage]</li>
+<li>BIOFREQ_BIW [zwei Mal pro Woche]</li>
+<li>BIOFREQ_WEEKLY [pro Woche]</li>
+<li>BIOFREQ_EVERY_10_DAYS [alle 10 Tage]</li>
+<li>BOPFREQ_SINGLE [Single]</li>
+<li>BIOFREQ_CIMZIA_REGIME0 [Woche 0,2,4]</li>
+<li>BIOFREQ_START_REGIME0 [Woche 0,2,4 (danach alle 4 Wochen)]</li>
+<li>BIOFREQ_START_REGIME1 [Woche 0,2,6 (danach alle 8 Wochen)]</li>
+<li>BIOFREQ_USTEKINUMAB_REGIME0 [Woche 0,4 (danach alle 12 Wochen)]</li>
+<li>BIOFREQ_SECUKINUMAB_REGIME0 [Woche 0,1,2,3,4 (danach alle 4 Wochen)]</li>
+<li>BIOFREQ_EVERY_2_WEEKS [alle 2 Wochen]</li>
+<li>BIOFREQ_EVERY_3_WEEKS [alle 3 Wochen]</li>
+<li>BIOFREQ_EVERY_4_WEEKS [alle 4 Wochen]</li>
+<li>BIOFREQ_EVERY_5_WEEKS [alle 5 Wochen]</li>
+<li>BIOFREQ_EVERY_6_WEEKS [alle 6 Wochen]</li>
+<li>BIOFREQ_EVERY_7_WEEKS [alle 7 Wochen]</li>
+<li>BIOFREQ_EVERY_8_WEEKS [alle 8 Wochen]</li>
+<li>BIOFREQ_EVERY_9_WEEKS [alle 9 Wochen]</li>
+<li>BIOFREQ_EVERY_10_WEEKS [alle 10 Wochen]</li>
+<li>BIOFREQ_EVERY_11_WEEKS [alle 11 Wochen]</li>
+<li>BIOFREQ_EVERY_12_WEEKS [alle 12 Wochen]</li>
+<li>BIOFREQ_EVERY_4_MONTHS [alle 4 Monate]</li>
+<li>BIOFREQ_EVERY_5_MONTHS [alle 5 Monate]</li>
+<li>BIOFREQ_EVERY_6_MONTHS [alle 6 Monate]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasOrdination.stop_date">
+<tt class="descname">stop_date</tt><a class="headerlink" href="#IPsaraasOrdination.stop_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Abbruch</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasOrdination.stop_reasons">
+<tt class="descname">stop_reasons</tt><a class="headerlink" href="#IPsaraasOrdination.stop_reasons" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Abbruchgrund</p>
+<dl class="docutils">
+<dt>Values [multiple]</dt>
+<dd><ul class="first last simple">
+<li>WITHDRAWAL_REASON_NOT_EFFECTIVE [ungenügende Wirksamkeit]</li>
+<li>WITHDRAWAL_REASON_ADVERSE_EVENT [Nebenwirkungen]</li>
+<li>WITHDRAWAL_REASON_REMISSION [Remission]</li>
+<li>WITHDRAWAL_REASON_OTHER [andere Gründe]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasOrdination.comments">
+<tt class="descname">comments</tt><a class="headerlink" href="#IPsaraasOrdination.comments" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Kommentare</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasOrdination.adjustments">
+<tt class="descname">adjustments</tt><a class="headerlink" href="#IPsaraasOrdination.adjustments" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Änderung der Dosis oder des Intervalls.</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="derived-attributes">
+<h2>Derived attributes<a class="headerlink" href="#derived-attributes" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Attributes that are derived for the research DB.</p>
+<blockquote>
+<dl class="docutils">
+<dt><strong>interval_days</strong></dt>
+<dd>Integer with length of interval in days. Derived from frequence.</dd>
+<dt><strong>online_data_entry</strong></dt>
+<dd>True if the medication object has been created by a doctor or HCP. False if
+it has been migrated from existing DB or created by SCQM staff.</dd>
+</dl>
+</blockquote>
+</div>
+<div class="section" id="ipsaraasadjustment">
+<h2>IPsaraasAdjustment<a class="headerlink" href="#ipsaraasadjustment" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="Products.PsaraasPatient.interfaces.IPsaraasAdjustment">
+<em class="property">interface </em><tt class="descclassname">Products.PsaraasPatient.interfaces.</tt><tt class="descname">IPsaraasAdjustment</tt><a class="headerlink" href="#Products.PsaraasPatient.interfaces.IPsaraasAdjustment" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Interface for a medication adjustment.</p>
+<dl class="attribute">
+<dt id="IPsaraasAdjustment.date">
+<tt class="descname">date</tt><a class="headerlink" href="#IPsaraasAdjustment.date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Datum</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdjustment.bio_dose">
+<tt class="descname">bio_dose</tt><a class="headerlink" href="#IPsaraasAdjustment.bio_dose" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Dosis (mg)</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdjustment.bio_route">
+<tt class="descname">bio_route</tt><a class="headerlink" href="#IPsaraasAdjustment.bio_route" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Applikationsform</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>SC [sc]</li>
+<li>IV [iv]</li>
+<li>IM [im]</li>
+<li>PO [po]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdjustment.bio_freq">
+<tt class="descname">bio_freq</tt><a class="headerlink" href="#IPsaraasAdjustment.bio_freq" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Dosierungsintervall</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>BIOFREQ_TWICE_DAILY [zwei Mal pro Tag]</li>
+<li>BIOFREQ_DAILY [täglich]</li>
+<li>BIOFREQ_EVERY_2_DAYS [alle 2 Tage]</li>
+<li>BIOFREQ_BIW [zwei Mal pro Woche]</li>
+<li>BIOFREQ_WEEKLY [pro Woche]</li>
+<li>BIOFREQ_EVERY_10_DAYS [alle 10 Tage]</li>
+<li>BOPFREQ_SINGLE [Single]</li>
+<li>BIOFREQ_CIMZIA_REGIME0 [Woche 0,2,4]</li>
+<li>BIOFREQ_START_REGIME0 [Woche 0,2,4 (danach alle 4 Wochen)]</li>
+<li>BIOFREQ_START_REGIME1 [Woche 0,2,6 (danach alle 8 Wochen)]</li>
+<li>BIOFREQ_USTEKINUMAB_REGIME0 [Woche 0,4 (danach alle 12 Wochen)]</li>
+<li>BIOFREQ_SECUKINUMAB_REGIME0 [Woche 0,1,2,3,4 (danach alle 4 Wochen)]</li>
+<li>BIOFREQ_EVERY_2_WEEKS [alle 2 Wochen]</li>
+<li>BIOFREQ_EVERY_3_WEEKS [alle 3 Wochen]</li>
+<li>BIOFREQ_EVERY_4_WEEKS [alle 4 Wochen]</li>
+<li>BIOFREQ_EVERY_5_WEEKS [alle 5 Wochen]</li>
+<li>BIOFREQ_EVERY_6_WEEKS [alle 6 Wochen]</li>
+<li>BIOFREQ_EVERY_7_WEEKS [alle 7 Wochen]</li>
+<li>BIOFREQ_EVERY_8_WEEKS [alle 8 Wochen]</li>
+<li>BIOFREQ_EVERY_9_WEEKS [alle 9 Wochen]</li>
+<li>BIOFREQ_EVERY_10_WEEKS [alle 10 Wochen]</li>
+<li>BIOFREQ_EVERY_11_WEEKS [alle 11 Wochen]</li>
+<li>BIOFREQ_EVERY_12_WEEKS [alle 12 Wochen]</li>
+<li>BIOFREQ_EVERY_4_MONTHS [alle 4 Monate]</li>
+<li>BIOFREQ_EVERY_5_MONTHS [alle 5 Monate]</li>
+<li>BIOFREQ_EVERY_6_MONTHS [alle 6 Monate]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Inhalt</a></h3>
+            <ul>
+<li><a class="reference external" href="#">Medication</a><ul>
+<li><a class="reference external" href="#ipsaraasordination">IPsaraasOrdination</a></li>
+<li><a class="reference external" href="#derived-attributes">Derived attributes</a></li>
+<li><a class="reference external" href="#ipsaraasadjustment">IPsaraasAdjustment</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Vorheriges Thema</h4>
+            <p class="topless"><a href="visit.html"
+                                  title="vorheriges Kapitel">Visit</a></p>
+            <h4>Nächstes Thema</h4>
+            <p class="topless"><a href="adverseevent.html"
+                                  title="nächstes Kapitel">Adverse Event</a></p>
+            <h3>Diese Seite</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/medication.txt"
+                     rel="nofollow">Quelltext anzeigen</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Schnellsuche</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Los" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="adverseevent.html" title="Adverse Event"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="visit.html" title="Visit"
+             >zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" >PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2017, seantis gmbh.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.7 erstellt.
+    </div>
+  </body>
+</html>

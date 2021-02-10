@@ -1,0 +1,93 @@
+Patient
+=======
+
+==========================
+IPsaraasPatient
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasPatient
+
+==========================
+IPsaraasPatientGeneral
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasPatientGeneral
+
+==========================
+IPsaraasPatientDisease
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasPatientDisease
+
+==========================
+IPsaraasPatientResearch
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasPatientResearch
+
+==============================
+IPsaraasPatientDiscontinuation
+==============================
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasPatientDiscontinuation
+
+==========================
+IPsaraasPatientSharing
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasPatientSharing
+
+==========================
+IPsaraasPatientCovab
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasPatientCovab
+
+==========================
+IPsaraasPatientDeprecated
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.IPsaraasPatientDeprecated
+
+==========================
+IPsaraasPatientCompass
+==========================
+
+COmPASS II study
+
+ **compass_arm**
+   Study arm
+
+   Values
+    * a: RAPID3 visible to patient and physician
+    * b: RAPID3 visible to patient only
+    * c: RAPID3 not visible
+
+==========================
+Derived attributes
+==========================
+
+Attributes that are derived for the research DB.
+
+  **asas_ibp_score**
+    ASAS IBP score
+
+  **wf_state**
+    Workflow state of the patient
+
+    Values
+      * disabled
+      * new
+      * registered
+      * enabled
+      * discontinued
+
+  **online_data_entry**
+    True if the patient object has been created by a doctor or HCP. False if it
+    has been migrated from existing DB or created by SCQM staff.
+
+  **mnyc_rx_score**
+    mNYC x-ray score
+
+  **mnyc_score**
+    mNYC overall score (x-ray and clinical score)
+
+  **mnyc_date_positive**
+    Date of the first x-ray with a positive mNYC score (independent of
+    clinical score)
+
+  **mnyc_date_negative**
+    Date of the first x-ray with a negative mNYC score (independent of
+    clinical score)

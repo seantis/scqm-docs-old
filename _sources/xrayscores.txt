@@ -1,0 +1,38 @@
+X-ray Scores
+============
+
+========================== 
+IPsaraasXrayScore
+========================== 
+.. autointerface:: psaraas.xray.interfaces.IPsaraasXrayScore 
+
+==========================
+IPsaraasMNYCXrayScore
+========================== 
+.. autointerface:: psaraas.xray.interfaces.IPsaraasMNYCXrayScore
+
+  **mny_rx_score**
+    mNYC x-ray score
+
+  **scorer**
+    ID of scoring doctor
+
+========================== 
+IPsaraasRauXrayScore
+========================== 
+.. autointerface:: psaraas.xray.interfaces.IPsaraasRauXrayScore
+
+  **rau_score**
+    RAU score. Score is between 0 and 190 for 32 joints.
+
+=======================================
+Joint Puppet Localizations (Rau Scores)
+=======================================
+
+Hands:
+
+.. image:: /images/rau_hands.jpg
+
+Feet:
+
+.. image:: /images/rau_feet.jpg     

@@ -1,0 +1,26 @@
+Biosample
+=========
+
+========================== 
+IPsaraasDNASample
+========================== 
+.. autointerface:: psaraas.bio.interfaces.IPsaraasDNASample
+
+========================== 
+IPsaraasSerumSample
+========================== 
+.. autointerface:: psaraas.bio.interfaces.IPsaraasSerumSample
+
+==========================
+Derived attributes
+==========================
+
+Attributes that are derived for the research DB.
+
+  **wf_state**
+    Workflow state of the sample
+
+    Values
+      * collected
+      * received
+      * processed

@@ -1,0 +1,23 @@
+Aliquot
+=======
+
+========================== 
+IPsaraasAliquot
+========================== 
+.. autointerface:: psaraas.bio.interfaces.IPsaraasAliquot
+
+==========================
+Derived attributes
+==========================
+
+Attributes that are derived for the research DB.
+
+  **wf_state**
+    Workflow state of the aliquot
+
+    Values
+      * available
+      * requested_study
+      * requested_destruction
+      * used_study
+      * destroyed

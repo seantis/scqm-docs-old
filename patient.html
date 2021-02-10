@@ -1,0 +1,1401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Patient &mdash; PsARAAS v4.30 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '4.30',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="PsARAAS v4.30 documentation" href="index.html" />
+    <link rel="up" title="PsARAAS Content Type Interfaces" href="interfaces.html" />
+    <link rel="next" title="Visit" href="visit.html" />
+    <link rel="prev" title="Health Care Professional" href="healthcareprofessional.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="visit.html" title="Visit"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="healthcareprofessional.html" title="Health Care Professional"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" accesskey="U">PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="patient">
+<h1>Patient<a class="headerlink" href="#patient" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="ipsaraaspatient">
+<h2>IPsaraasPatient<a class="headerlink" href="#ipsaraaspatient" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="Products.PsaraasPatient.interfaces.IPsaraasPatient">
+<em class="property">interface </em><tt class="descclassname">Products.PsaraasPatient.interfaces.</tt><tt class="descname">IPsaraasPatient</tt><a class="headerlink" href="#Products.PsaraasPatient.interfaces.IPsaraasPatient" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Interface describing basic patient data</p>
+<dl class="attribute">
+<dt id="IPsaraasPatient.first_name">
+<tt class="descname">first_name</tt><a class="headerlink" href="#IPsaraasPatient.first_name" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Vorname</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.last_name">
+<tt class="descname">last_name</tt><a class="headerlink" href="#IPsaraasPatient.last_name" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Nachname</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.maiden_name">
+<tt class="descname">maiden_name</tt><a class="headerlink" href="#IPsaraasPatient.maiden_name" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Ledigenname</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.e_mail">
+<tt class="descname">e_mail</tt><a class="headerlink" href="#IPsaraasPatient.e_mail" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>E-mail Patient</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.gender">
+<tt class="descname">gender</tt><a class="headerlink" href="#IPsaraasPatient.gender" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Geschlecht</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>MALE [männlich]</li>
+<li>FEMALE [weiblich]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.date_of_birth">
+<tt class="descname">date_of_birth</tt><a class="headerlink" href="#IPsaraasPatient.date_of_birth" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Geburtsdatum</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.language">
+<tt class="descname">language</tt><a class="headerlink" href="#IPsaraasPatient.language" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Sprache</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>de [Deutsch]</li>
+<li>fr [Französisch]</li>
+<li>it [Italienisch]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.informed_consent">
+<tt class="descname">informed_consent</tt><a class="headerlink" href="#IPsaraasPatient.informed_consent" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Einwilligung klinisch</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.informed_consent_date">
+<tt class="descname">informed_consent_date</tt><a class="headerlink" href="#IPsaraasPatient.informed_consent_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>NUR SCQM: Datum der Einwilligung</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.informed_consent_bio">
+<tt class="descname">informed_consent_bio</tt><a class="headerlink" href="#IPsaraasPatient.informed_consent_bio" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Einwilligung Biobank</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.informed_consent_bio_date">
+<tt class="descname">informed_consent_bio_date</tt><a class="headerlink" href="#IPsaraasPatient.informed_consent_bio_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>NUR SCQM: Datum der Einwilligung Biobank</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.diagnose">
+<tt class="descname">diagnose</tt><a class="headerlink" href="#IPsaraasPatient.diagnose" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Diagnose</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>RA_RHEUMATOID_ARTHRITIS [Rheumatoide Arthritis]</li>
+<li>MB_MORBUS_BECHTEREW [Axiale Spondyloarthritis]</li>
+<li>PSA_PSORIASIS_ARTHRITIS [Psoriasisarthritis]</li>
+<li>UA_UNDIFFERENTIATED_ARTHRITIS [Unklassifiziert und Andere]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.patient_number">
+<tt class="descname">patient_number</tt><a class="headerlink" href="#IPsaraasPatient.patient_number" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>SCQM Patientennummer</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatient.internal_comments">
+<tt class="descname">internal_comments</tt><a class="headerlink" href="#IPsaraasPatient.internal_comments" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Internal comments</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaspatientgeneral">
+<h2>IPsaraasPatientGeneral<a class="headerlink" href="#ipsaraaspatientgeneral" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="Products.PsaraasPatient.interfaces.IPsaraasPatientGeneral">
+<em class="property">interface </em><tt class="descclassname">Products.PsaraasPatient.interfaces.</tt><tt class="descname">IPsaraasPatientGeneral</tt><a class="headerlink" href="#Products.PsaraasPatient.interfaces.IPsaraasPatientGeneral" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Interface desribing additional patient data</p>
+<dl class="attribute">
+<dt id="IPsaraasPatientGeneral.ever_been_pregnant_or_father">
+<tt class="descname">ever_been_pregnant_or_father</tt><a class="headerlink" href="#IPsaraasPatientGeneral.ever_been_pregnant_or_father" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Falls dies ihr erster Fragebogen ist: Waren Sie je schwanger oder wurden Sie je Vater? Falls dies eine Jahreskontrolle ist: Wurden Sie in den letzten 12 Monaten schwanger oder wurden Sie Vater?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientGeneral.willing_answer_additional_questions_pregnancy_paternity">
+<tt class="descname">willing_answer_additional_questions_pregnancy_paternity</tt><a class="headerlink" href="#IPsaraasPatientGeneral.willing_answer_additional_questions_pregnancy_paternity" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Das heutige Wissen zu Fragen über Schwangerschaft bzw. Vaterschaft bei Arthritis ist beschränkt. Wären Sie bereit, auf eine spätere ärztliche Anfrage (an Ihren behandelnden Arzt) weitere Auskünfte in Bezug auf Ihre Schwangerschaft / Vaterschaft zu geben?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientGeneral.more_questions">
+<tt class="descname">more_questions</tt><a class="headerlink" href="#IPsaraasPatientGeneral.more_questions" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Aus Zeitgründen ist im gesamten Fragebogen zu vielen wichtigen Aspekten der Arthritis jeweils nur eine einzige Frage aufgeführt. Bei vielen dieser Einzelaspekte wäre es wertvoll, diese mit einigen zusätzlichen Fragen zu einem späteren Zeitpunkt genauer zu untersuchen. Wären Sie bereit, auf eine spätere ärztliche Anfrage (an Ihren behandelnden Arzt) weiterführende Auskünfte zu einzelnen Punkten dieses Fragebogens zu geben?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaspatientdisease">
+<h2>IPsaraasPatientDisease<a class="headerlink" href="#ipsaraaspatientdisease" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="Products.PsaraasPatient.interfaces.IPsaraasPatientDisease">
+<em class="property">interface </em><tt class="descclassname">Products.PsaraasPatient.interfaces.</tt><tt class="descname">IPsaraasPatientDisease</tt><a class="headerlink" href="#Products.PsaraasPatient.interfaces.IPsaraasPatientDisease" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Interface describing disease related patient data</p>
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.date_first_symptoms">
+<tt class="descname">date_first_symptoms</tt><a class="headerlink" href="#IPsaraasPatientDisease.date_first_symptoms" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Beginn der Symptome</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.date_diagnosis">
+<tt class="descname">date_diagnosis</tt><a class="headerlink" href="#IPsaraasPatientDisease.date_diagnosis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Zeitpunkt Diagnosestellung</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.pre_inclusion_synovitis">
+<tt class="descname">pre_inclusion_synovitis</tt><a class="headerlink" href="#IPsaraasPatientDisease.pre_inclusion_synovitis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Synovitis</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.pre_inclusion_synovitis_large_joints">
+<tt class="descname">pre_inclusion_synovitis_large_joints</tt><a class="headerlink" href="#IPsaraasPatientDisease.pre_inclusion_synovitis_large_joints" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Grosse Gelenke</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1 [1]</li>
+<li>2TO10 [2-10]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.pre_inclusion_synovitis_small_joints">
+<tt class="descname">pre_inclusion_synovitis_small_joints</tt><a class="headerlink" href="#IPsaraasPatientDisease.pre_inclusion_synovitis_small_joints" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Kleine Gelenke</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>0 [0]</li>
+<li>1TO3 [1-3]</li>
+<li>4TO10 [4-10]</li>
+<li>GT10 [&gt;10]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.morning_stiffness">
+<tt class="descname">morning_stiffness</tt><a class="headerlink" href="#IPsaraasPatientDisease.morning_stiffness" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Morgensteifigkeit</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>LT30 [weniger als 30 Minuten (inkl. keine)]</li>
+<li>30TO60 [30 Minuten bis 1 Stunde]</li>
+<li>MT60 [mehr als 1 Stunde]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.new_york_criterium_1">
+<tt class="descname">new_york_criterium_1</tt><a class="headerlink" href="#IPsaraasPatientDisease.new_york_criterium_1" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Tief lokalisierte Kreuzschmerzen und -steife von über 3 Monaten Dauer, die nicht durch Ruhe, aber durch Bewegung vermindert werden (bezieht sich auf die gesamte Krankheitsdauer).</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.new_york_criterium_1_year">
+<tt class="descname">new_york_criterium_1_year</tt><a class="headerlink" href="#IPsaraasPatientDisease.new_york_criterium_1_year" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Trat zum ersten Mal auf (Monat und Jahr)</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.back_pain_ge3mo">
+<tt class="descname">back_pain_ge3mo</tt><a class="headerlink" href="#IPsaraasPatientDisease.back_pain_ge3mo" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Rückenschmerz &gt;= 3 Monate</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.back_pain_slow_onset">
+<tt class="descname">back_pain_slow_onset</tt><a class="headerlink" href="#IPsaraasPatientDisease.back_pain_slow_onset" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Langsamer Beginn</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.back_pain_improvement_activity">
+<tt class="descname">back_pain_improvement_activity</tt><a class="headerlink" href="#IPsaraasPatientDisease.back_pain_improvement_activity" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Besserung bei Bewegung</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.back_pain_no_improvement_rest">
+<tt class="descname">back_pain_no_improvement_rest</tt><a class="headerlink" href="#IPsaraasPatientDisease.back_pain_no_improvement_rest" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Keine Besserung in Ruhe</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.back_pain_night_improvement_getting_up">
+<tt class="descname">back_pain_night_improvement_getting_up</tt><a class="headerlink" href="#IPsaraasPatientDisease.back_pain_night_improvement_getting_up" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Nächtlicher Schmerz mit Besserung durch Aufstehen</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.family_anamnesis_yn">
+<tt class="descname">family_anamnesis_yn</tt><a class="headerlink" href="#IPsaraasPatientDisease.family_anamnesis_yn" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Familienanamnese von Erst- oder zweitgradigen Verwandten</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.family_anamnesis">
+<tt class="descname">family_anamnesis</tt><a class="headerlink" href="#IPsaraasPatientDisease.family_anamnesis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Familienanamnese:</p>
+<dl class="docutils">
+<dt>Values [multiple]</dt>
+<dd><ul class="first last simple">
+<li>RHEUMATOID_ARTHRITIS [Rheumatoide Arthritis]</li>
+<li>ANKYLOSING_SPONDYLITIS [Axiale Spondyloarthritis (M. Bechterew)]</li>
+<li>PSORIASIS [Psoriasis]</li>
+<li>PSORIATIC_ARTHRITIS [Psoriasisarthritis]</li>
+<li>CHRONIC_INFLAMMATORY_BOWEL_DISEASE [Chronisch-entzündliche Darmerkrankungen]</li>
+<li>OTHER_SPONDYLOARTHRIPATHIES [Andere (reaktive Arthritis, SAPHO)]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.peripheral_arthritis">
+<tt class="descname">peripheral_arthritis</tt><a class="headerlink" href="#IPsaraasPatientDisease.peripheral_arthritis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Periphere Arthritis</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.ra_crit_arhtirits_three_or_more_joints">
+<tt class="descname">ra_crit_arhtirits_three_or_more_joints</tt><a class="headerlink" href="#IPsaraasPatientDisease.ra_crit_arhtirits_three_or_more_joints" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Weichteilschwellung von 3 oder mehr Gelenken (gleichzeitige Schwellung: PIP, MCP, Handgelenke, Ellbogen, Knie, Sprunggelenke, MTP, rechts oder links</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.ra_crit_symmetric_arthritis">
+<tt class="descname">ra_crit_symmetric_arthritis</tt><a class="headerlink" href="#IPsaraasPatientDisease.ra_crit_symmetric_arthritis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Symmetrische Schwellung (beidseitige Schädigung der gleichen Gelenkgruppen: PIP, MCP, Handgelenke, Ellbogen, Knie, Sprunggelenke, MTP)</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.ra_crit_arthritis_hand_joints">
+<tt class="descname">ra_crit_arthritis_hand_joints</tt><a class="headerlink" href="#IPsaraasPatientDisease.ra_crit_arthritis_hand_joints" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Schwellung der PIP, MCP oder Handgelenke (mindestens eine Gelenkgruppe)</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.arthritis_large_joints_lower_extremeties">
+<tt class="descname">arthritis_large_joints_lower_extremeties</tt><a class="headerlink" href="#IPsaraasPatientDisease.arthritis_large_joints_lower_extremeties" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Arthritis der grossen Gelenke der unteren Extremitäten (z.B. Hüfte, Knie, Fussgelenk)</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.axial_joint_manifestations">
+<tt class="descname">axial_joint_manifestations</tt><a class="headerlink" href="#IPsaraasPatientDisease.axial_joint_manifestations" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Axiale Manifestationen</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.spinal_involvment">
+<tt class="descname">spinal_involvment</tt><a class="headerlink" href="#IPsaraasPatientDisease.spinal_involvment" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wirbelsäulenbeteiligung</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.manifestations_coxitis">
+<tt class="descname">manifestations_coxitis</tt><a class="headerlink" href="#IPsaraasPatientDisease.manifestations_coxitis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Coxitis</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.other_rheumatological_manifestations">
+<tt class="descname">other_rheumatological_manifestations</tt><a class="headerlink" href="#IPsaraasPatientDisease.other_rheumatological_manifestations" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Andere Rheumatologische Manifestationen</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.ra_crit_rheumatoid_nodules">
+<tt class="descname">ra_crit_rheumatoid_nodules</tt><a class="headerlink" href="#IPsaraasPatientDisease.ra_crit_rheumatoid_nodules" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Rheumaknoten</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.manifestations_dactylitis">
+<tt class="descname">manifestations_dactylitis</tt><a class="headerlink" href="#IPsaraasPatientDisease.manifestations_dactylitis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Daktylitis</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.manifestations_enthesitis">
+<tt class="descname">manifestations_enthesitis</tt><a class="headerlink" href="#IPsaraasPatientDisease.manifestations_enthesitis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Enthesitis</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.manifestations_enthesitis_heel">
+<tt class="descname">manifestations_enthesitis_heel</tt><a class="headerlink" href="#IPsaraasPatientDisease.manifestations_enthesitis_heel" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Ferse</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.extra_articular_manifestations_arthritis">
+<tt class="descname">extra_articular_manifestations_arthritis</tt><a class="headerlink" href="#IPsaraasPatientDisease.extra_articular_manifestations_arthritis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Arthritis assoziierte extraartikuläre Manifestationen</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.nail_manifestations">
+<tt class="descname">nail_manifestations</tt><a class="headerlink" href="#IPsaraasPatientDisease.nail_manifestations" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Psoriatischer Nagelbefall (z.B. Ölflecken, Tüpfelnägel, Onycholyse)</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.skin_manifestation">
+<tt class="descname">skin_manifestation</tt><a class="headerlink" href="#IPsaraasPatientDisease.skin_manifestation" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Psoriatischer Hautbefall</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.uveitis">
+<tt class="descname">uveitis</tt><a class="headerlink" href="#IPsaraasPatientDisease.uveitis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>anteriore Uveitis</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.urethritis">
+<tt class="descname">urethritis</tt><a class="headerlink" href="#IPsaraasPatientDisease.urethritis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Urethritis</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.arthropathies_ibd">
+<tt class="descname">arthropathies_ibd</tt><a class="headerlink" href="#IPsaraasPatientDisease.arthropathies_ibd" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Chronisch-entzündliche Darmerkrankung</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.enteritis">
+<tt class="descname">enteritis</tt><a class="headerlink" href="#IPsaraasPatientDisease.enteritis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Akute Enteritis</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.extra_articular_manifestations_other">
+<tt class="descname">extra_articular_manifestations_other</tt><a class="headerlink" href="#IPsaraasPatientDisease.extra_articular_manifestations_other" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Andere extraartikuläre Manifestationen</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.vasculitis">
+<tt class="descname">vasculitis</tt><a class="headerlink" href="#IPsaraasPatientDisease.vasculitis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Vaskulitis</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.siccasymptoms">
+<tt class="descname">siccasymptoms</tt><a class="headerlink" href="#IPsaraasPatientDisease.siccasymptoms" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Siccassymptomatik</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.manifestation_organs">
+<tt class="descname">manifestation_organs</tt><a class="headerlink" href="#IPsaraasPatientDisease.manifestation_organs" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Andere Organmanifestationen (z.B. kardial, renal, pulmonal)</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.preceding_infection">
+<tt class="descname">preceding_infection</tt><a class="headerlink" href="#IPsaraasPatientDisease.preceding_infection" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Kurz vor Erstmanifestation (≤ 1 Mt) vorausgegangene Infektion</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.ra_crit_rheumatoid_factor">
+<tt class="descname">ra_crit_rheumatoid_factor</tt><a class="headerlink" href="#IPsaraasPatientDisease.ra_crit_rheumatoid_factor" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Rheumafaktornachweis</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Positiv]</li>
+<li>NO [Negativ]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.rheumatoid_factor_titer">
+<tt class="descname">rheumatoid_factor_titer</tt><a class="headerlink" href="#IPsaraasPatientDisease.rheumatoid_factor_titer" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Titer IE/ml</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.rheumatoid_factor_uln">
+<tt class="descname">rheumatoid_factor_uln</tt><a class="headerlink" href="#IPsaraasPatientDisease.rheumatoid_factor_uln" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Referenzwert IE/ml</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.anti_ccp">
+<tt class="descname">anti_ccp</tt><a class="headerlink" href="#IPsaraasPatientDisease.anti_ccp" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>anti-CCP Antikörper</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Positiv]</li>
+<li>NO [Negativ]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.anti_ccp_titer">
+<tt class="descname">anti_ccp_titer</tt><a class="headerlink" href="#IPsaraasPatientDisease.anti_ccp_titer" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Titer E/ml</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.anti_ccp_uln">
+<tt class="descname">anti_ccp_uln</tt><a class="headerlink" href="#IPsaraasPatientDisease.anti_ccp_uln" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Referenzwert E/ml</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.hla_b27">
+<tt class="descname">hla_b27</tt><a class="headerlink" href="#IPsaraasPatientDisease.hla_b27" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>HLA-B27</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Positiv]</li>
+<li>NO [Negativ]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.pre_inclusion_elevated_crp">
+<tt class="descname">pre_inclusion_elevated_crp</tt><a class="headerlink" href="#IPsaraasPatientDisease.pre_inclusion_elevated_crp" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>CRP Erhöhung vor Einschluss</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Positiv]</li>
+<li>NO [Negativ]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.ra_crit_radiographic_changes">
+<tt class="descname">ra_crit_radiographic_changes</tt><a class="headerlink" href="#IPsaraasPatientDisease.ra_crit_radiographic_changes" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Für RA charakteristische Erosionen im Röntgenbild</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.osteo_proliferation_near_bone">
+<tt class="descname">osteo_proliferation_near_bone</tt><a class="headerlink" href="#IPsaraasPatientDisease.osteo_proliferation_near_bone" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Juxta-artikuläre Knochenbildung typisch für PsA im Röntgenbild</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.manifestations_sacroilitis">
+<tt class="descname">manifestations_sacroilitis</tt><a class="headerlink" href="#IPsaraasPatientDisease.manifestations_sacroilitis" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Sacroiliitis im Röntgenbild</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.arthropathies_others_reactive_arthritis_sapho">
+<tt class="descname">arthropathies_others_reactive_arthritis_sapho</tt><a class="headerlink" href="#IPsaraasPatientDisease.arthropathies_others_reactive_arthritis_sapho" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Andere Spondyloarthropathien (z.B. reaktive Arthritis, SAPHO)</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDisease.good_response_to_nsaids">
+<tt class="descname">good_response_to_nsaids</tt><a class="headerlink" href="#IPsaraasPatientDisease.good_response_to_nsaids" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Gutes Ansprechen auf NSAR</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaspatientresearch">
+<h2>IPsaraasPatientResearch<a class="headerlink" href="#ipsaraaspatientresearch" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="Products.PsaraasPatient.interfaces.IPsaraasPatientResearch">
+<em class="property">interface </em><tt class="descclassname">Products.PsaraasPatient.interfaces.</tt><tt class="descname">IPsaraasPatientResearch</tt><a class="headerlink" href="#Products.PsaraasPatient.interfaces.IPsaraasPatientResearch" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Interface describing research project related patient data</p>
+<dl class="attribute">
+<dt id="IPsaraasPatientResearch.participation_in_research_studies">
+<tt class="descname">participation_in_research_studies</tt><a class="headerlink" href="#IPsaraasPatientResearch.participation_in_research_studies" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Teilnahme an Studien</p>
+<dl class="docutils">
+<dt>Values [multiple]</dt>
+<dd><ul class="first last simple">
+<li>ASCORE [ASCORE]</li>
+<li>ARTHRALGIA [USZ Arthralgia 2018]</li>
+<li>BACKPAIN [USZ Backpain]</li>
+<li>UPEDRA [UPEDRA]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientResearch.enbrel_care_arm">
+<tt class="descname">enbrel_care_arm</tt><a class="headerlink" href="#IPsaraasPatientResearch.enbrel_care_arm" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Enbrel-Care Studienarm</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>CARE [Care]</li>
+<li>ROUTINE [Routine]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientResearch.research_id_usz">
+<tt class="descname">research_id_usz</tt><a class="headerlink" href="#IPsaraasPatientResearch.research_id_usz" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>ResearchID USZ</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaspatientdiscontinuation">
+<h2>IPsaraasPatientDiscontinuation<a class="headerlink" href="#ipsaraaspatientdiscontinuation" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="Products.PsaraasPatient.interfaces.IPsaraasPatientDiscontinuation">
+<em class="property">interface </em><tt class="descclassname">Products.PsaraasPatient.interfaces.</tt><tt class="descname">IPsaraasPatientDiscontinuation</tt><a class="headerlink" href="#Products.PsaraasPatient.interfaces.IPsaraasPatientDiscontinuation" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Interface describing the data related to discontinuation of patients.</p>
+<dl class="attribute">
+<dt id="IPsaraasPatientDiscontinuation.date_discontinuation">
+<tt class="descname">date_discontinuation</tt><a class="headerlink" href="#IPsaraasPatientDiscontinuation.date_discontinuation" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Datum des SCQM-Abbruchs</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDiscontinuation.reasons_discontinuation">
+<tt class="descname">reasons_discontinuation</tt><a class="headerlink" href="#IPsaraasPatientDiscontinuation.reasons_discontinuation" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Abbruchgrund</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>DIED [Patient verstorben]</li>
+<li>REFUSES_FURTHER_COLLABORATION [Patient verweigert weitere Teilnahme]</li>
+<li>OTHER_REASONS [Andere Gründe]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDiscontinuation.cause_of_death">
+<tt class="descname">cause_of_death</tt><a class="headerlink" href="#IPsaraasPatientDiscontinuation.cause_of_death" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Todesursache</p>
+<dl class="docutils">
+<dt>Values [multiple]</dt>
+<dd><ul class="first last simple">
+<li>CARDIOVASCULAR [Kardiovaskuläre Erkrankung]</li>
+<li>CANCER [Krebsleiden]</li>
+<li>RESPIRATORY_DISEASE [Atemwegserkrankung]</li>
+<li>INFECTION [Infektion]</li>
+<li>ACCIDENTS_TRAUMA [Unfall-und Gewalteinwirkung]</li>
+<li>DEMENTIA [Demenz]</li>
+<li>OTHER_CAUSES [Andere Ursachen]</li>
+<li>DO_NOT_KNOW [Weiss es nicht]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDiscontinuation.cause_of_death_comments">
+<tt class="descname">cause_of_death_comments</tt><a class="headerlink" href="#IPsaraasPatientDiscontinuation.cause_of_death_comments" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Kommentar</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDiscontinuation.cod_cardiovascular">
+<tt class="descname">cod_cardiovascular</tt><a class="headerlink" href="#IPsaraasPatientDiscontinuation.cod_cardiovascular" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Kardiovaskuläre Erkrankung</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>ACUTE_CORONARY_SYNDROM [Akutes Koronarsyndrom]</li>
+<li>CEREBROVASCULAR_INSULT [Zerebrovaskulärer Insult]</li>
+<li>SUDDEN_DEATH [Plötzlicher Herztod]</li>
+<li>HEART_FAILURE [Herzinsuffizienz]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDiscontinuation.cod_cancer">
+<tt class="descname">cod_cancer</tt><a class="headerlink" href="#IPsaraasPatientDiscontinuation.cod_cancer" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Krebsleiden</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>LARGE_INTESTINE [Dickdarm]</li>
+<li>LUNGS [Lunge]</li>
+<li>BREAST [Brust]</li>
+<li>LYMPHOMA_LEUKEMIA [Lymphome/Leukämie]</li>
+<li>SKIN [Haut]</li>
+<li>OTHER [Andere]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDiscontinuation.cod_year">
+<tt class="descname">cod_year</tt><a class="headerlink" href="#IPsaraasPatientDiscontinuation.cod_year" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Todesjahr</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaspatientsharing">
+<h2>IPsaraasPatientSharing<a class="headerlink" href="#ipsaraaspatientsharing" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="Products.PsaraasPatient.interfaces.IPsaraasPatientSharing">
+<em class="property">interface </em><tt class="descclassname">Products.PsaraasPatient.interfaces.</tt><tt class="descname">IPsaraasPatientSharing</tt><a class="headerlink" href="#Products.PsaraasPatient.interfaces.IPsaraasPatientSharing" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasPatientSharing.sharing_institutions">
+<tt class="descname">sharing_institutions</tt><a class="headerlink" href="#IPsaraasPatientSharing.sharing_institutions" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Sharing institutions</dd></dl>
+
+<dl class="attribute">
+<dt>
+<tt class="descname">sharing_institutions</tt></dt>
+<dd>patient_label_sharingInstitutions</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaspatientcovab">
+<h2>IPsaraasPatientCovab<a class="headerlink" href="#ipsaraaspatientcovab" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="Products.PsaraasPatient.interfaces.IPsaraasPatientCovab">
+<em class="property">interface </em><tt class="descclassname">Products.PsaraasPatient.interfaces.</tt><tt class="descname">IPsaraasPatientCovab</tt><a class="headerlink" href="#Products.PsaraasPatient.interfaces.IPsaraasPatientCovab" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="IPsaraasPatientCovab.covab_invited">
+<tt class="descname">covab_invited</tt><a class="headerlink" href="#IPsaraasPatientCovab.covab_invited" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientCovab.covab_participation">
+<tt class="descname">covab_participation</tt><a class="headerlink" href="#IPsaraasPatientCovab.covab_participation" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientCovab.covab_address">
+<tt class="descname">covab_address</tt><a class="headerlink" href="#IPsaraasPatientCovab.covab_address" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientCovab.covab_shipped">
+<tt class="descname">covab_shipped</tt><a class="headerlink" href="#IPsaraasPatientCovab.covab_shipped" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientCovab.covab_collected">
+<tt class="descname">covab_collected</tt><a class="headerlink" href="#IPsaraasPatientCovab.covab_collected" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NOT_YET [Noch nicht]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientCovab.covab_collected_date">
+<tt class="descname">covab_collected_date</tt><a class="headerlink" href="#IPsaraasPatientCovab.covab_collected_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientCovab.covab_kit_number">
+<tt class="descname">covab_kit_number</tt><a class="headerlink" href="#IPsaraasPatientCovab.covab_kit_number" title="Permalink zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaspatientdeprecated">
+<h2>IPsaraasPatientDeprecated<a class="headerlink" href="#ipsaraaspatientdeprecated" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="Products.PsaraasPatient.interfaces.IPsaraasPatientDeprecated">
+<em class="property">interface </em><tt class="descclassname">Products.PsaraasPatient.interfaces.</tt><tt class="descname">IPsaraasPatientDeprecated</tt><a class="headerlink" href="#Products.PsaraasPatient.interfaces.IPsaraasPatientDeprecated" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Questions stopped: need an interface to be mirrored (see #734)</p>
+<dl class="attribute">
+<dt id="IPsaraasPatientDeprecated.where_did_you_get_information_about_disease">
+<tt class="descname">where_did_you_get_information_about_disease</tt><a class="headerlink" href="#IPsaraasPatientDeprecated.where_did_you_get_information_about_disease" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>visit_label_doYouFeelInformedAboutTheTreatmentOptionsForMorbusBechterew</p>
+<dl class="docutils">
+<dt>Values [multiple]</dt>
+<dd><ul class="first last simple">
+<li>PHYSICIAN [Ärztin/ Arzt]</li>
+<li>PHYSIOTHERAPIST [Physiotherapeutin/ Physiotherapeut]</li>
+<li>SWISS_ASSOCIATION_MORBUS_BECHTEREW [Schweizerische Vereinigung Morbus Bechterew]</li>
+<li>OTHER_PERSONS_CONCERNED [andere Betroffene]</li>
+<li>LITERATURE_MEDIA_INTERNET [Literatur, Medien, Internet]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDeprecated.do_you_feel_informed_about_treatment_options_morbus_bechterew">
+<tt class="descname">do_you_feel_informed_about_treatment_options_morbus_bechterew</tt><a class="headerlink" href="#IPsaraasPatientDeprecated.do_you_feel_informed_about_treatment_options_morbus_bechterew" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>visit_label_doYouFeelInformedAboutTheTreatmentOptionsForMorbusBechterew</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDeprecated.where_did_you_get_information_treatment_options_rheumatism">
+<tt class="descname">where_did_you_get_information_treatment_options_rheumatism</tt><a class="headerlink" href="#IPsaraasPatientDeprecated.where_did_you_get_information_treatment_options_rheumatism" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>visit_label_whereDidYouGetYourInformationAboutTheTreatmentPossibilitiesForYourRheumaticDisease</p>
+<dl class="docutils">
+<dt>Values [multiple]</dt>
+<dd><ul class="first last simple">
+<li>PHYSICIAN [Ärztin/ Arzt]</li>
+<li>PHYSIOTHERAPIST [Physiotherapeutin/ Physiotherapeut]</li>
+<li>SWISS_ASSOCIATION_MORBUS_BECHTEREW [Schweizerische Vereinigung Morbus Bechterew]</li>
+<li>OTHER_PERSONS_CONCERNED [andere Betroffene]</li>
+<li>LITERATURE_MEDIA_INTERNET [Literatur, Medien, Internet]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDeprecated.do_you_know_patient_organisation_swiss_association_mb">
+<tt class="descname">do_you_know_patient_organisation_swiss_association_mb</tt><a class="headerlink" href="#IPsaraasPatientDeprecated.do_you_know_patient_organisation_swiss_association_mb" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>visit_label_doYouKnowThePatientOrganisationSwissAssociationMorbusBechterew</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDeprecated.where_you_know_patient_organisation_swiss_association_mb_from">
+<tt class="descname">where_you_know_patient_organisation_swiss_association_mb_from</tt><a class="headerlink" href="#IPsaraasPatientDeprecated.where_you_know_patient_organisation_swiss_association_mb_from" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>visit_label_whereYouKnowPatientOrganisationSwissAssociationMBFrom</p>
+<dl class="docutils">
+<dt>Values [multiple]</dt>
+<dd><ul class="first last simple">
+<li>PHYSICIAN [Ärztin/ Arzt]</li>
+<li>PHYSIOTHERAPIST [Physiotherapeutin/ Physiotherapeut]</li>
+<li>OTHER_PERSONS_CONCERNED [andere Betroffene]</li>
+<li>FAMILY_AND_FRIENDS [Family, friends]</li>
+<li>LITERATURE_MEDIA_INTERNET [Literatur, Medien, Internet]</li>
+<li>OTHER [andere]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasPatientDeprecated.are_you_member_of_swiss_association_morbus_bechterew">
+<tt class="descname">are_you_member_of_swiss_association_morbus_bechterew</tt><a class="headerlink" href="#IPsaraasPatientDeprecated.are_you_member_of_swiss_association_morbus_bechterew" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>visit_label_areYouAMemberOfTheSwissAssociationMorbusBechterew</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="ipsaraaspatientcompass">
+<h2>IPsaraasPatientCompass<a class="headerlink" href="#ipsaraaspatientcompass" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>COmPASS II study</p>
+<blockquote>
+<dl class="docutils">
+<dt><strong>compass_arm</strong></dt>
+<dd><p class="first">Study arm</p>
+<dl class="last docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>a: RAPID3 visible to patient and physician</li>
+<li>b: RAPID3 visible to patient only</li>
+<li>c: RAPID3 not visible</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</blockquote>
+</div>
+<div class="section" id="derived-attributes">
+<h2>Derived attributes<a class="headerlink" href="#derived-attributes" title="Permalink zu dieser Überschrift">¶</a></h2>
+<p>Attributes that are derived for the research DB.</p>
+<blockquote>
+<dl class="docutils">
+<dt><strong>asas_ibp_score</strong></dt>
+<dd>ASAS IBP score</dd>
+<dt><strong>wf_state</strong></dt>
+<dd><p class="first">Workflow state of the patient</p>
+<dl class="last docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>disabled</li>
+<li>new</li>
+<li>registered</li>
+<li>enabled</li>
+<li>discontinued</li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt><strong>online_data_entry</strong></dt>
+<dd>True if the patient object has been created by a doctor or HCP. False if it
+has been migrated from existing DB or created by SCQM staff.</dd>
+<dt><strong>mnyc_rx_score</strong></dt>
+<dd>mNYC x-ray score</dd>
+<dt><strong>mnyc_score</strong></dt>
+<dd>mNYC overall score (x-ray and clinical score)</dd>
+<dt><strong>mnyc_date_positive</strong></dt>
+<dd>Date of the first x-ray with a positive mNYC score (independent of
+clinical score)</dd>
+<dt><strong>mnyc_date_negative</strong></dt>
+<dd>Date of the first x-ray with a negative mNYC score (independent of
+clinical score)</dd>
+</dl>
+</blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Inhalt</a></h3>
+            <ul>
+<li><a class="reference external" href="#">Patient</a><ul>
+<li><a class="reference external" href="#ipsaraaspatient">IPsaraasPatient</a></li>
+<li><a class="reference external" href="#ipsaraaspatientgeneral">IPsaraasPatientGeneral</a></li>
+<li><a class="reference external" href="#ipsaraaspatientdisease">IPsaraasPatientDisease</a></li>
+<li><a class="reference external" href="#ipsaraaspatientresearch">IPsaraasPatientResearch</a></li>
+<li><a class="reference external" href="#ipsaraaspatientdiscontinuation">IPsaraasPatientDiscontinuation</a></li>
+<li><a class="reference external" href="#ipsaraaspatientsharing">IPsaraasPatientSharing</a></li>
+<li><a class="reference external" href="#ipsaraaspatientcovab">IPsaraasPatientCovab</a></li>
+<li><a class="reference external" href="#ipsaraaspatientdeprecated">IPsaraasPatientDeprecated</a></li>
+<li><a class="reference external" href="#ipsaraaspatientcompass">IPsaraasPatientCompass</a></li>
+<li><a class="reference external" href="#derived-attributes">Derived attributes</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Vorheriges Thema</h4>
+            <p class="topless"><a href="healthcareprofessional.html"
+                                  title="vorheriges Kapitel">Health Care Professional</a></p>
+            <h4>Nächstes Thema</h4>
+            <p class="topless"><a href="visit.html"
+                                  title="nächstes Kapitel">Visit</a></p>
+            <h3>Diese Seite</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/patient.txt"
+                     rel="nofollow">Quelltext anzeigen</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Schnellsuche</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Los" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="visit.html" title="Visit"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="healthcareprofessional.html" title="Health Care Professional"
+             >zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" >PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2017, seantis gmbh.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.7 erstellt.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Doctor &mdash; PsARAAS v4.30 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '4.30',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="PsARAAS v4.30 documentation" href="index.html" />
+    <link rel="up" title="PsARAAS Content Type Interfaces" href="interfaces.html" />
+    <link rel="next" title="Health Care Professional" href="healthcareprofessional.html" />
+    <link rel="prev" title="Hospital" href="hospital.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="healthcareprofessional.html" title="Health Care Professional"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="hospital.html" title="Hospital"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" accesskey="U">PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="doctor">
+<h1>Doctor<a class="headerlink" href="#doctor" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="ipsaraasdoctor">
+<h2>IPsaraasDoctor<a class="headerlink" href="#ipsaraasdoctor" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="Products.PsaraasHospital.interfaces.IPsaraasDoctor">
+<em class="property">interface </em><tt class="descclassname">Products.PsaraasHospital.interfaces.</tt><tt class="descname">IPsaraasDoctor</tt><a class="headerlink" href="#Products.PsaraasHospital.interfaces.IPsaraasDoctor" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Marker interface for Psaraas Doctor</p>
+<dl class="attribute">
+<dt id="IPsaraasDoctor.e_mail">
+<tt class="descname">e_mail</tt><a class="headerlink" href="#IPsaraasDoctor.e_mail" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Email</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasDoctor.first_name">
+<tt class="descname">first_name</tt><a class="headerlink" href="#IPsaraasDoctor.first_name" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Vorname</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasDoctor.last_name">
+<tt class="descname">last_name</tt><a class="headerlink" href="#IPsaraasDoctor.last_name" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Nachname</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasDoctor.doctor_title">
+<tt class="descname">doctor_title</tt><a class="headerlink" href="#IPsaraasDoctor.doctor_title" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Titel (akademisch)</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasDoctor.doctor_position">
+<tt class="descname">doctor_position</tt><a class="headerlink" href="#IPsaraasDoctor.doctor_position" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Position</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasDoctor.doctor_phone">
+<tt class="descname">doctor_phone</tt><a class="headerlink" href="#IPsaraasDoctor.doctor_phone" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Telefon</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasDoctor.gender">
+<tt class="descname">gender</tt><a class="headerlink" href="#IPsaraasDoctor.gender" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Geschlecht</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>MALE [männlich]</li>
+<li>FEMALE [weiblich]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasDoctor.doctor_language">
+<tt class="descname">doctor_language</tt><a class="headerlink" href="#IPsaraasDoctor.doctor_language" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Sprache</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>de [Deutsch]</li>
+<li>fr [Französisch]</li>
+<li>it [Italienisch]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasDoctor.location">
+<tt class="descname">location</tt><a class="headerlink" href="#IPsaraasDoctor.location" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Ort:</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasDoctor.scorer_acronym">
+<tt class="descname">scorer_acronym</tt><a class="headerlink" href="#IPsaraasDoctor.scorer_acronym" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Scoring Acronym</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Inhalt</a></h3>
+            <ul>
+<li><a class="reference external" href="#">Doctor</a><ul>
+<li><a class="reference external" href="#ipsaraasdoctor">IPsaraasDoctor</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Vorheriges Thema</h4>
+            <p class="topless"><a href="hospital.html"
+                                  title="vorheriges Kapitel">Hospital</a></p>
+            <h4>Nächstes Thema</h4>
+            <p class="topless"><a href="healthcareprofessional.html"
+                                  title="nächstes Kapitel">Health Care Professional</a></p>
+            <h3>Diese Seite</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/doctor.txt"
+                     rel="nofollow">Quelltext anzeigen</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Schnellsuche</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Los" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="healthcareprofessional.html" title="Health Care Professional"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="hospital.html" title="Hospital"
+             >zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" >PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2017, seantis gmbh.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.7 erstellt.
+    </div>
+  </body>
+</html>

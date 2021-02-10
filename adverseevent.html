@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Adverse Event &mdash; PsARAAS v4.30 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '4.30',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="top" title="PsARAAS v4.30 documentation" href="index.html" />
+    <link rel="up" title="PsARAAS Content Type Interfaces" href="interfaces.html" />
+    <link rel="next" title="X-ray" href="xray.html" />
+    <link rel="prev" title="Medication" href="medication.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             accesskey="I">Index</a></li>
+        <li class="right" >
+          <a href="xray.html" title="X-ray"
+             accesskey="N">weiter</a> |</li>
+        <li class="right" >
+          <a href="medication.html" title="Medication"
+             accesskey="P">zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" accesskey="U">PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="adverse-event">
+<h1>Adverse Event<a class="headerlink" href="#adverse-event" title="Permalink zu dieser Überschrift">¶</a></h1>
+<div class="section" id="ipsaraasadverseevent">
+<h2>IPsaraasAdverseEvent<a class="headerlink" href="#ipsaraasadverseevent" title="Permalink zu dieser Überschrift">¶</a></h2>
+<dl class="interface">
+<dt id="psaraas.adverseevent.interfaces.IPsaraasAdverseEvent">
+<em class="property">interface </em><tt class="descclassname">psaraas.adverseevent.interfaces.</tt><tt class="descname">IPsaraasAdverseEvent</tt><a class="headerlink" href="#psaraas.adverseevent.interfaces.IPsaraasAdverseEvent" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Interface for an adverse event.</p>
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.registration_date">
+<tt class="descname">registration_date</tt><a class="headerlink" href="#IPsaraasAdverseEvent.registration_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Meldedatum der UAW:</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.name">
+<tt class="descname">name</tt><a class="headerlink" href="#IPsaraasAdverseEvent.name" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>UAW Bezeichnung</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.start_date">
+<tt class="descname">start_date</tt><a class="headerlink" href="#IPsaraasAdverseEvent.start_date" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Beginn der UAW</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.duration">
+<tt class="descname">duration</tt><a class="headerlink" href="#IPsaraasAdverseEvent.duration" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Dauer der UAW (Tage)</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.latency">
+<tt class="descname">latency</tt><a class="headerlink" href="#IPsaraasAdverseEvent.latency" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Latenzzeit der UAW (Tage)</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.comments">
+<tt class="descname">comments</tt><a class="headerlink" href="#IPsaraasAdverseEvent.comments" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Beobachtete unerwünschte Arzneimittelwirkung</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.examinations">
+<tt class="descname">examinations</tt><a class="headerlink" href="#IPsaraasAdverseEvent.examinations" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Relevante Untersuchungsergebnisse</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.treatments">
+<tt class="descname">treatments</tt><a class="headerlink" href="#IPsaraasAdverseEvent.treatments" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Allfällige Therapie der UAW</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.internal_comments">
+<tt class="descname">internal_comments</tt><a class="headerlink" href="#IPsaraasAdverseEvent.internal_comments" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Kommentare SCQM</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.medicine_associated">
+<tt class="descname">medicine_associated</tt><a class="headerlink" href="#IPsaraasAdverseEvent.medicine_associated" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Medikamentenassoziiert?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.suspected_drugs">
+<tt class="descname">suspected_drugs</tt><a class="headerlink" href="#IPsaraasAdverseEvent.suspected_drugs" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Verdächtigte Medikamente</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.lot_number">
+<tt class="descname">lot_number</tt><a class="headerlink" href="#IPsaraasAdverseEvent.lot_number" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>LOT-Nummern</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.suspected_medicine">
+<tt class="descname">suspected_medicine</tt><a class="headerlink" href="#IPsaraasAdverseEvent.suspected_medicine" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Verdächtigte Medikamente</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.type_of_complication">
+<tt class="descname">type_of_complication</tt><a class="headerlink" href="#IPsaraasAdverseEvent.type_of_complication" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Art der Komplikation oder Nebenwirkung (evtl. mehrere)</p>
+<dl class="docutils">
+<dt>Values [multiple]</dt>
+<dd><ul class="first last simple">
+<li>ALLERGIC_IMMUNOLOGICAL [allergisch/ immunologisch]</li>
+<li>GASTROINTESTINAL [gastrointestinal]</li>
+<li>INFECTIOUS [infektiös]</li>
+<li>MUSCLES [Muskeln]</li>
+<li>OPHTALMOLOGIC [ophthalmologisch]</li>
+<li>CARDIOLOGIC [kardiologisch]</li>
+<li>GENERAL_SYSTEMIC [allgemein/systemisch]</li>
+<li>NEOPLASIA [Neoplasie]</li>
+<li>NEUROPSYCHIATRIC [neuropsychiatrisch]</li>
+<li>HNO [HNO]</li>
+<li>DERMATOLOGIC [dermatologisch]</li>
+<li>HEMATOLOGIC [hämatologisch]</li>
+<li>NEPHROLOGIC [nephrologisch]</li>
+<li>PULMONARY [pulmonal]</li>
+<li>HEPATIC [hepatisch]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.severity_level">
+<tt class="descname">severity_level</tt><a class="headerlink" href="#IPsaraasAdverseEvent.severity_level" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Folgen der vermuteten UAW</p>
+<dl class="docutils">
+<dt>Values [multiple]</dt>
+<dd><ul class="first last simple">
+<li>DEATH [Tod]</li>
+<li>LIFE_THREATENING [Lebensbedrohend]</li>
+<li>HOSPITALIZATION [Hospitalisation]</li>
+<li>PROLONGED_HOSPITALIZATION [Hospitalisation verlängert]</li>
+<li>PERMANENT_DISABILITY_OR_DAMAGE [Bleibende Schädigung oder Behinderung]</li>
+<li>TEMPORARY_IMPAIRMENT [vorübergehend schwer beeinträchtigt / medizinisch wichtig ]</li>
+<li>RECOVERY_WITHOUT_DAMAGE [Ohne Schaden erholt]</li>
+<li>NOT_YET_RECOVERED [Noch nicht erholt]</li>
+<li>OTHER [Anderes]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.improvement_after_discontinuation">
+<tt class="descname">improvement_after_discontinuation</tt><a class="headerlink" href="#IPsaraasAdverseEvent.improvement_after_discontinuation" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Besserung des Zustandes nach Therapieabbruch</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>OTHER [Andere]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.deterioration_after_resumption">
+<tt class="descname">deterioration_after_resumption</tt><a class="headerlink" href="#IPsaraasAdverseEvent.deterioration_after_resumption" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Verschlechterung des Zustandes nach erneuter Gabe des verdächtigten Medikamentes?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>OTHER [Andere]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.deterioration_after_resumption_of">
+<tt class="descname">deterioration_after_resumption_of</tt><a class="headerlink" href="#IPsaraasAdverseEvent.deterioration_after_resumption_of" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Erneute Gabe von</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.weight_kg">
+<tt class="descname">weight_kg</tt><a class="headerlink" href="#IPsaraasAdverseEvent.weight_kg" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Gewicht</p>
+<p>Min-Value: 35</p>
+<p>Max-Value: 160</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.smoker">
+<tt class="descname">smoker</tt><a class="headerlink" href="#IPsaraasAdverseEvent.smoker" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Rauchen</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>I_HAVE_NEVER_SMOKED [Nie]</li>
+<li>I_AM_A_FORMER_SMOKER_FOR_MORE_THAN_A_YEAR [Ehemaliger Raucher (für mehr als ein Jahr)]</li>
+<li>I_AM_CURRENTLY_SMOKING [Raucher]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.drink_alcoholic_beverages">
+<tt class="descname">drink_alcoholic_beverages</tt><a class="headerlink" href="#IPsaraasAdverseEvent.drink_alcoholic_beverages" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Alkohol</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.currently_pregnant">
+<tt class="descname">currently_pregnant</tt><a class="headerlink" href="#IPsaraasAdverseEvent.currently_pregnant" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Schwangerschaft</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+<li>NA [Unbekannt]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.liver_disease">
+<tt class="descname">liver_disease</tt><a class="headerlink" href="#IPsaraasAdverseEvent.liver_disease" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Leberleiden (Virusserologien)</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.kidney_disease">
+<tt class="descname">kidney_disease</tt><a class="headerlink" href="#IPsaraasAdverseEvent.kidney_disease" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Nierenleiden</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.allergies">
+<tt class="descname">allergies</tt><a class="headerlink" href="#IPsaraasAdverseEvent.allergies" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Allergien</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.creatinine">
+<tt class="descname">creatinine</tt><a class="headerlink" href="#IPsaraasAdverseEvent.creatinine" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Kreatinin</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.relevant_health_issues">
+<tt class="descname">relevant_health_issues</tt><a class="headerlink" href="#IPsaraasAdverseEvent.relevant_health_issues" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Weitere relevante Krankheiten</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.reported_via_other_channel">
+<tt class="descname">reported_via_other_channel</tt><a class="headerlink" href="#IPsaraasAdverseEvent.reported_via_other_channel" title="Permalink zu dieser Definition">¶</a></dt>
+<dd><p>Wurde diese UAW schon über andere Kanäle gemeldet?</p>
+<dl class="docutils">
+<dt>Values</dt>
+<dd><ul class="first last simple">
+<li>YES [Ja]</li>
+<li>NO [Nein]</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.no_further_information">
+<tt class="descname">no_further_information</tt><a class="headerlink" href="#IPsaraasAdverseEvent.no_further_information" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Keine weiteren Angaben beim meldenden Arzt vorhanden</dd></dl>
+
+<dl class="attribute">
+<dt id="IPsaraasAdverseEvent.related_health_issue">
+<tt class="descname">related_health_issue</tt><a class="headerlink" href="#IPsaraasAdverseEvent.related_health_issue" title="Permalink zu dieser Definition">¶</a></dt>
+<dd>Zugehöriges Gesundheitsproblem</dd></dl>
+
+<dl class="attribute">
+<dt>
+<tt class="descname">suspected_drugs</tt></dt>
+<dd><p>ae_label_suspectedDrugs</p>
+<p>ae_help_suspectedDrugs</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<tt class="descname">relevant_health_issues</tt></dt>
+<dd><p>ae_label_relevantHealthIssues</p>
+<p>ae_help_relevantHealthIssues</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<tt class="descname">related_health_issue</tt></dt>
+<dd>ae_label_relatedHealthIssue</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Inhalt</a></h3>
+            <ul>
+<li><a class="reference external" href="#">Adverse Event</a><ul>
+<li><a class="reference external" href="#ipsaraasadverseevent">IPsaraasAdverseEvent</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Vorheriges Thema</h4>
+            <p class="topless"><a href="medication.html"
+                                  title="vorheriges Kapitel">Medication</a></p>
+            <h4>Nächstes Thema</h4>
+            <p class="topless"><a href="xray.html"
+                                  title="nächstes Kapitel">X-ray</a></p>
+            <h3>Diese Seite</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/adverseevent.txt"
+                     rel="nofollow">Quelltext anzeigen</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Schnellsuche</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Los" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Geben Sie Suchbegriffe oder einen Modul-, Klassen- oder Funktionsnamen ein.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Allgemeiner Index"
+             >Index</a></li>
+        <li class="right" >
+          <a href="xray.html" title="X-ray"
+             >weiter</a> |</li>
+        <li class="right" >
+          <a href="medication.html" title="Medication"
+             >zurück</a> |</li>
+        <li><a href="index.html">PsARAAS v4.30 documentation</a> &raquo;</li>
+          <li><a href="interfaces.html" >PsARAAS Content Type Interfaces</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2017, seantis gmbh.
+      Mit <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.7 erstellt.
+    </div>
+  </body>
+</html>

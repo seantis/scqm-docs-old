@@ -1,0 +1,27 @@
+PatientApps
+===========
+
+==========================
+IPsaraasCompass
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.compass.IPsaraasCompass
+
+==========================
+IPsaraasIDialog
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.idialog.IPsaraasIDialog
+
+==========================
+IPsaraasNSAID
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.idialog.IPsaraasNSAID
+
+==========================
+IPsaraasMedicationCode
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.idialog.IPsaraasMedicationCode
+
+==========================
+IPsaraasCompliance
+==========================
+.. autointerface:: Products.PsaraasPatient.interfaces.medication.IPsaraasCompliance

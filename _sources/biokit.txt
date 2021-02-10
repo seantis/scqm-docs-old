@@ -1,0 +1,21 @@
+Biokit
+======
+
+========================== 
+IPsaraasBioKit
+========================== 
+.. autointerface:: psaraas.bio.interfaces.IPsaraasBioKit
+
+==========================
+Derived attributes
+==========================
+
+Attributes that are derived for the research DB.
+
+  **wf_state**
+    Workflow state of the biokit
+
+    Values
+      * collected
+      * received
+      * processed
